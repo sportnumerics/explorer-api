@@ -7,8 +7,7 @@ function gamesWithPredictions(args) {
   let games = args[1];
   let ratings = args[2];
   return games.map(function(game) {
-    game['predictions'] = predictGame(teamId, game.opponent.id, ratings);
-    return game;
+    return Object.assign({}, game, {predictions: predictGame(teamId, game.opponent.id, ratings)});
   });
 }
 

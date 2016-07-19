@@ -6,8 +6,7 @@ function teamsWithRatings(args) {
   let teams = args[0];
   let ratings = args[1];
   return teams.map(function(team) {
-    team['ratings'] = ratingsSummary(ratings[team.id]);
-    return team;
+    return Object.assign({}, team, {ratings: ratingsSummary(ratings[team.id])});
   });
 }
 
