@@ -1,5 +1,5 @@
 {
-  "corsOrigin": false,
+  "corsOrigin": "http://explorer.sportnumerics.com, *",
   "teams": {
     "baseUrl": "http://stats.sportnumerics.com/teams"
   },
