@@ -1,0 +1,11 @@
+{
+  "corsOrigin": false,
+  "teams": {
+    "baseUrl": "http://stats.sportnumerics.com/teams"
+  },
+  "ratings": {
+    "method": "s3",
+    "bucket": "sportnumerics-ratings-results",
+    "key": "linear-v1/ratings.json"
+  }
+}

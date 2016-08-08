@@ -3,7 +3,7 @@
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-let baseUrl = 'http://localhost:3000/teams';
+let baseUrl = require('config').get('schedule.baseUrl');
 
 module.exports = function getScheduleFromStatsService(teamId) {
   let url = baseUrl + '/' + teamId + '/schedule';

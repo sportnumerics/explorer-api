@@ -2,16 +2,33 @@
 
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
+let AWS = require('aws-sdk');
+AWS.config.region = 'us-west-2';
 
-let baseUrl = 'http://localhost:5000/ratings';
+function getRatingsJsonFromRatingsService(config) {
+  if (config.method === 's3') {
+    return new Promise((resolve, reject) => {
+      let s3 = new AWS.S3();
+      s3.getObject({Bucket: config.bucket, Key: config.key}, (err, data) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(JSON.parse(data.Body));
+        }
+      });
+    });
+  } else {
+    return fetch(config.baseUrl).then(function(response) {
+      if (response.status >= 400) {
+        throw new Error('Unable to get ratings from ratings service.');
+      }
+      return response.json();
+    });
+  }
+}
 
 module.exports = function getRatingsFromRatingsService() {
-  return fetch(baseUrl).then(function(response) {
-    if (response.status >= 400) {
-      throw new Error('Unable to get ratings from ratings service.');
-    }
-    return response.json();
-  }).then(function(json) {
+  return getRatingsJsonFromRatingsService(require('config').get('ratings')).then(function(json) {
     return json.ratings;
   });
 };

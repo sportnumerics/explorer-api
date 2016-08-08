@@ -1,0 +1,10 @@
+{
+  "corsOrigin": "http://localhost:8000",
+  "teams": {
+    "baseUrl": "http://localhost:3000/teams"
+  },
+  "ratings": {
+    "method": "fetch",
+    "baseUrl": "http://localhost:5000/ratings"
+  }
+}

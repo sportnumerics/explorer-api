@@ -3,7 +3,7 @@
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-let baseUrl = 'http://localhost:3000/teams';
+let baseUrl = require('config').get('teams.baseUrl');
 
 module.exports = function getTeamsFromStatsService() {
   return fetch(baseUrl).then(function(response) {

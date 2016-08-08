@@ -1,1 +1,10 @@
-{}
+{
+  "corsOrigin": false,
+  "schedule": {
+    "baseUrl": "http://stats.sportnumerics.com/teams"
+  },
+  "ratings": {
+    "method": "fetch",
+    "baseUrl": "http://localhost:5000/ratings"
+  }
+}
