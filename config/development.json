@@ -1,10 +1,13 @@
 {
-  "corsOrigin": "http://localhost:8000",
+  "corsOrigin": "*",
   "teams": {
-    "baseUrl": "http://localhost:3000/teams"
+    "baseUrl": "http://sportnumerics-stats-dev.s3-website-ap-southeast-2.amazonaws.com",
+    "teams": "/teams",
+    "divs": "/divs"
   },
   "ratings": {
-    "method": "fetch",
-    "baseUrl": "http://localhost:5000/ratings"
+    "method": "s3",
+    "bucket": "sportnumerics-predict-dev",
+    "baseUri": "linear-v1/"
   }
 }

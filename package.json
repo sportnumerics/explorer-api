@@ -1,10 +1,11 @@
 {
   "name": "explorer",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Back end for sportnumerics explorer",
   "scripts": {
-    "start": "node ./src/index.js"
+    "deploy": "sls deploy --stage=dev --verbose",
+    "test-divs": "sls invoke local --function divs --stage=dev",
+    "test-teams": "sls invoke local --function teams --stage=dev"
   },
   "author": "",
   "license": "ISC",
@@ -12,10 +13,13 @@
     "aws-sdk": "^2.4.13",
     "config": "^1.21.0",
     "cors": "^2.7.1",
-    "es6-promise": "^3.2.1",
+    "bluebird": "^3.4.6",
     "express": "^4.14.0",
     "isomorphic-fetch": "^2.2.1",
     "mathjs": "^3.3.0",
     "request": "^2.73.0"
+  },
+  "devDependencies": {
+    "serverless": "^1.7.0"
   }
 }

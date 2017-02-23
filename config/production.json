@@ -1,11 +1,13 @@
 {
   "corsOrigin": "*",
   "teams": {
-    "baseUrl": "http://stats.sportnumerics.com/teams"
+    "baseUrl": "http://sportnumerics-stats-prod.s3-website-ap-southeast-2.amazonaws.com",
+    "teams": "/teams",
+    "divs": "/divs"
   },
   "ratings": {
     "method": "s3",
-    "bucket": "sportnumerics-ratings-results",
-    "key": "linear-v1/ratings.json"
+    "bucket": "sportnumerics-predict-prod",
+    "baseUri": "linear-v1/"
   }
 }

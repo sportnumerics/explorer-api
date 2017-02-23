@@ -1,12 +1,13 @@
 'use strict';
 
-require('es6-promise').polyfill();
+global.Promise = require('bluebird');
 require('isomorphic-fetch');
+let config = require('config').get('teams');
 
-let baseUrl = require('config').get('teams.baseUrl');
-
-module.exports = function getTeamsFromStatsService() {
-  return fetch(baseUrl).then(function(response) {
+module.exports = function getTeamsFromStatsService(div) {
+  let url = `${config.baseUrl}${config.divs}/${div}${config.teams}`;
+  console.log(`Fetching ${url}`);
+  return fetch(url).then(function(response) {
     if (response.status >= 400) {
       throw new Error('Unable to get teams from stats service.');
     }

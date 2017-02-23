@@ -1,0 +1,41 @@
+service: sportnumerics-explorer-api
+provider:
+  name: aws
+  runtime: nodejs4.3
+  stage: dev
+  region: ap-southeast-2
+  iamRoleStatements:
+  - Effect: "Allow"
+    Action:
+      - "s3:ListBucket"
+    Resource: ${self:custom.resultsBucketArn}
+  - Effect: "Allow"
+    Action:
+      - "s3:GetObject"
+    Resource: "${self:custom.resultsBucketArn}/*"
+custom:
+  resultsBucketName: "sportnumerics-predict-${opt:stage}"
+  resultsBucketArn: "arn:aws:s3:::sportnumerics-predict-${opt:stage}"
+
+functions:
+  divs:
+    handler: handlers.divs
+    events:
+    - http:
+        path: divs
+        method: get
+        cors: true
+  teams:
+    handler: handlers.teams
+    events:
+    - http:
+        path: divs/{div}/teams
+        method: get
+        cors: true
+  schedule:
+    handler: handlers.schedule
+    events:
+    - http:
+        path: divs/{div}/teams/{id}
+        method: get
+        cors: true
