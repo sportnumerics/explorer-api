@@ -10,6 +10,9 @@ function handleify(f) {
     f(Object.assign({}, event.pathParameters)).then((response) => {
       return {
         statusCode: 200,
+        headers: {
+          "Access-Control-Allow-Origin": "*"
+        },
         body: JSON.stringify(response)
       };
     }).catch((error) => {
