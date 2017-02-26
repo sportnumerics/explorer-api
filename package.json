@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "Back end for sportnumerics explorer",
   "scripts": {
-    "deploy": "sls deploy --stage=dev --verbose",
-    "test-divs": "sls invoke local --function divs --stage=dev",
-    "test-teams": "sls invoke local --function teams --stage=dev"
+    "deploy": "sls deploy --stage=dev --verbose"
   },
-  "author": "",
+  "author": "Will James",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.4.13",
