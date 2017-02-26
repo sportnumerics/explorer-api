@@ -2,9 +2,6 @@
   "name": "explorer",
   "version": "1.0.0",
   "description": "Back end for sportnumerics explorer",
-  "scripts": {
-    "deploy": "sls deploy --stage=dev --verbose"
-  },
   "author": "Will James",
   "license": "ISC",
   "dependencies": {

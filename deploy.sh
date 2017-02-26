@@ -6,6 +6,6 @@ set -e
 source ./env/env.sh
 unset AWS_SESSION_TOKEN
 
-npm install
+STAGE=dev
 
-npm run deploy
+node_modules/.bin/serverless deploy --stage=$STAGE --verbose
