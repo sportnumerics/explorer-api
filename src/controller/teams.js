@@ -1,6 +1,6 @@
 'use strict';
 
-require('es6-promise').polyfill();
+global.Promise = require('bluebird');
 let getRatings = require('../service/ratings'),
   getTeams = require('../service/teams'),
   joinTeamsWithRatings = require('../adapter/teamsWithRatings');

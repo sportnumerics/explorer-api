@@ -2,17 +2,18 @@
   "name": "explorer",
   "version": "1.0.0",
   "description": "Back end for sportnumerics explorer",
-  "author": "Will James",
+  "scripts": {
+    "deploy": "sls deploy --stage=dev --verbose",
+    "test-divs": "sls invoke local --function divs --stage dev",
+    "test-teams": "sls invoke local --function teams --stage dev --path fixtures/invocations/teams.json"
+  },
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.4.13",
     "config": "^1.21.0",
-    "cors": "^2.7.1",
     "bluebird": "^3.4.6",
-    "express": "^4.14.0",
-    "isomorphic-fetch": "^2.2.1",
-    "mathjs": "^3.3.0",
-    "request": "^2.73.0"
+    "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
     "serverless": "^1.7.0"
