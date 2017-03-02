@@ -6,9 +6,10 @@ let getRatings = require('../service/ratings'),
   joinTeamsWithRatings = require('../adapter/teamsWithRatings');
 
 module.exports = function teams(params) {
+  let year = params.year;
   let div = params.div;
 
-  return Promise.all([getTeams(div), getRatings(div)])
+  return Promise.all([getTeams(year, div), getRatings(year, div)])
     .then(joinTeamsWithRatings)
     .then(teams => {
       return {teams};

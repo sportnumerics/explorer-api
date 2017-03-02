@@ -6,8 +6,9 @@ let fs = require('fs');
 let AWS = require('aws-sdk');
 AWS.config.region = 'us-west-2';
 
-function getRatingsJsonFromRatingsService(config, div) {
-  let uri = `${config.baseUri}ratings-${div}.json`;
+function getRatingsJsonFromRatingsService(config, year, div) {
+  let uri = `${config.baseUri}/years/${year}/divs/${divs}/ratings.json`;
+
   if (config.method === 's3') {
     return new Promise((resolve, reject) => {
       let s3 = new AWS.S3();

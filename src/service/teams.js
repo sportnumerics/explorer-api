@@ -4,8 +4,8 @@ global.Promise = require('bluebird');
 require('isomorphic-fetch');
 let config = require('config').get('teams');
 
-module.exports = function getTeamsFromStatsService(div) {
-  let url = `${config.baseUrl}${config.divs}/${div}${config.teams}`;
+module.exports = function getTeamsFromStatsService(year, div) {
+  let url = `${config.baseUrl}/years/${year}/divs/${div}/teams`;
   console.log(`Fetching ${url}`);
   return fetch(url).then(function(response) {
     if (response.status >= 400) {

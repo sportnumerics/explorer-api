@@ -1,9 +1,7 @@
 {
   "corsOrigin": "*",
   "teams": {
-    "baseUrl": "http://sportnumerics-stats-dev.s3-website-ap-southeast-2.amazonaws.com",
-    "teams": "/teams",
-    "divs": "/divs"
+    "baseUrl": "http://sportnumerics-stats-dev.s3-website-ap-southeast-2.amazonaws.com"
   },
   "ratings": {
     "method": "s3",

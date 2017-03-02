@@ -5,8 +5,8 @@ require('isomorphic-fetch');
 
 let config = require('config').get('teams');
 
-module.exports = function getScheduleFromStatsService(teamId) {
-  let url = `${config.baseUrl}${config.teams}/${teamId}/schedule`;
+module.exports = function getScheduleFromStatsService(year, teamId) {
+  let url = `${config.baseUrl}/year/${year}/teams/${teamId}/schedule`;
   console.log(`Fetching ${url}`);
   return fetch(url).then(function(response) {
     if (response.status >= 400) {

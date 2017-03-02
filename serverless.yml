@@ -29,13 +29,13 @@ functions:
     handler: handlers.teams
     events:
     - http:
-        path: divs/{div}/teams
+        path: years/{year}/divs/{div}/teams
         method: get
         cors: true
   schedule:
     handler: handlers.schedule
     events:
     - http:
-        path: divs/{div}/teams/{id}/schedule
+        path: years/{year}/divs/{div}/teams/{id}/schedule
         method: get
         cors: true
