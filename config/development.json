@@ -5,7 +5,6 @@
   },
   "ratings": {
     "method": "s3",
-    "bucket": "sportnumerics-predict-dev",
-    "baseUri": "linear-v1/"
+    "bucket": "sportnumerics-predict-dev"
   }
 }

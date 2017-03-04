@@ -4,8 +4,9 @@
   "description": "Back end for sportnumerics explorer",
   "scripts": {
     "deploy": "sls deploy --stage=dev --verbose",
-    "test-divs": "sls invoke local --function divs --stage dev",
-    "test-teams": "sls invoke local --function teams --stage dev --path fixtures/invocations/teams.json"
+    "test-divs": "sls invoke local --function divs --stage dev --path fixtures/invocations/divs.json",
+    "test-teams": "sls invoke local --function teams --stage dev --path fixtures/invocations/teams.json",
+    "test-schedule": "sls invoke local --function schedule --stage dev --path fixtures/invocations/schedule.json"
   },
   "author": "",
   "license": "ISC",
