@@ -9,6 +9,14 @@ module.exports = function teams(params) {
   let year = params.year;
   let div = params.div;
 
+  if (!year) {
+    throw new Error('You must specify a year.');
+  }
+
+  if (!div) {
+    throw new Error('You must specify a division.');
+  }
+
   return Promise.all([getTeams(year, div), getRatings(year, div)])
     .then(joinTeamsWithRatings)
     .then(teams => {
