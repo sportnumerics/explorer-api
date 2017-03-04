@@ -22,7 +22,7 @@ functions:
     handler: handlers.divs
     events:
     - http:
-        path: divs
+        path: years/{year}/divs
         method: get
         cors: true
   teams:
