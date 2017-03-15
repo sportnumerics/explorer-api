@@ -23,8 +23,5 @@ module.exports = function schedule(params) {
   }
 
   return Promise.all([teamId, getSchedule(year, teamId), getRatings(year, div)])
-    .then(joinGamesWithPredictions)
-    .then(schedule => {
-      return {schedule};
-    });
+    .then(joinGamesWithPredictions);
 };

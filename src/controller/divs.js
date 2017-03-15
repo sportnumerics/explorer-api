@@ -9,7 +9,5 @@ module.exports = function divs(params) {
     throw new Error('You must specify a year.');
   }
 
-  return getDivs(year).then(divisions => {
-    return {divisions}
-  });
+  return getDivs(year);
 }

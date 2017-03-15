@@ -18,8 +18,5 @@ module.exports = function teams(params) {
   }
 
   return Promise.all([getTeams(year, div), getRatings(year, div)])
-    .then(joinTeamsWithRatings)
-    .then(teams => {
-      return {teams};
-    });
+    .then(joinTeamsWithRatings);
 };
