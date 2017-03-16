@@ -1,11 +1,12 @@
 'use strict';
 global.Promise = require('bluebird');
 let AWS = require('aws-sdk');
+let moment = require('moment');
 
 function parseS3Data(data) {
   let body = JSON.parse(data.Body);
   let meta = {
-    lastModified: data.LastModified
+    lastModified: moment.utc(Date.parse(data.LastModified))
   };
 
   return Object.assign({}, body, { meta });
