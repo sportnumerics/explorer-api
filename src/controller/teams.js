@@ -10,11 +10,11 @@ module.exports = function teams(params) {
   let div = params.div;
 
   if (!year) {
-    throw new Error('You must specify a year.');
+    throw new InvalidRequestError('You must specify a year.');
   }
 
   if (!div) {
-    throw new Error('You must specify a division.');
+    throw new InvalidRequestError('You must specify a division.');
   }
 
   return Promise.all([getTeams(year, div), getRatings(year, div)])

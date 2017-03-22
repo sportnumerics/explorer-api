@@ -13,6 +13,8 @@ provider:
     Action:
       - "s3:GetObject"
     Resource: "${self:custom.resultsBucketArn}/*"
+  environment:
+    NODE_ENV: ${opt:stage}
 custom:
   resultsBucketName: "sportnumerics-predict-${opt:stage}"
   resultsBucketArn: "arn:aws:s3:::sportnumerics-predict-${opt:stage}"

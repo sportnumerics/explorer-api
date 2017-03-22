@@ -2,27 +2,47 @@
 
 let divsController = require('./src/controller/divs'),
   scheduleController = require('./src/controller/schedule'),
-  teamsController = require('./src/controller/teams');
+  teamsController = require('./src/controller/teams'),
+  errors = require('./src/model/errors'),
+  config = require('config');
 
 function handleify(f) {
   return (event, context, callback) => {
     console.log(`Entering function`, event, context);
-    f(Object.assign({}, event.pathParameters)).then((response) => {
-      return {
-        statusCode: 200,
-        headers: {
-          "Access-Control-Allow-Origin": "*"
-        },
-        body: JSON.stringify(response)
-      };
-    }).catch((error) => {
-      console.log(`Got error`, error);
-      return {
-        statusCode: 500,
-        body: JSON.stringify({message: error.message, stack: error.stack})
-      };
-    }).asCallback(callback);
+    console.log(`process.env.NODE_ENV: `, process.env.NODE_ENV)
+    f(Object.assign({}, event.pathParameters))
+    .then(createSuccessResponse)
+    .catch(createErrorResponse)
+    .asCallback(callback);
   }
+}
+
+function createSuccessResponse(response) {
+  return {
+    statusCode: 200,
+    headers: {
+      "Access-Control-Allow-Origin": config.allowedOrigins
+    },
+    body: JSON.stringify(response)
+  };
+}
+
+function createErrorResponse(error) {
+  console.log(`Got error`, error);
+  return {
+    statusCode: error.statusCode || 500,
+    body: createErrorBody(error),
+    headers: {
+      "Access-Control-Allow-Origin": config.allowedOrigins
+    }
+  };
+}
+
+function createErrorBody(error) {
+  let prod = process.env.NODE_ENV !== 'prod';
+  let message = error.message;
+  let stack = prod ? error.stack : undefined;
+  return JSON.stringify({ message, stack })
 }
 
 module.exports = {

@@ -3,7 +3,8 @@
 global.Promise = require('bluebird');
 let getRatings = require('../service/ratings'),
   getSchedule = require('../service/schedule'),
-  joinGamesWithPredictions = require('../adapter/gamesWithPredictions');
+  joinGamesWithPredictions = require('../adapter/gamesWithPredictions'),
+  InvalidRequestError = require('../model/errors').InvalidRequestError;
 
 module.exports = function schedule(params) {
   let year = params.year;
@@ -11,15 +12,15 @@ module.exports = function schedule(params) {
   let teamId = params.id;
 
   if (!year) {
-    throw new Error('You must specify a year.');
+    throw new InvalidRequestError('You must specify a year.');
   }
 
   if (!div) {
-    throw new Error('You must specify a division');
+    throw new InvalidRequestError('You must specify a division');
   }
 
   if (!teamId) {
-    throw new Error('You must specify a team id');
+    throw new InvalidRequestError('You must specify a team id');
   }
 
   return Promise.all([teamId, getSchedule(year, teamId), getRatings(year, div)])
