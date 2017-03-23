@@ -19,22 +19,6 @@ custom:
   resultsBucketName: "sportnumerics-predict-${opt:stage}"
   resultsBucketArn: "arn:aws:s3:::sportnumerics-predict-${opt:stage}"
 
-resources:
-  Outputs:
-    ExplorerApiUrl:
-      Description: Base url for sportnumerics explorer api
-      Value:
-        Fn::Join:
-          - ""
-          - - "https://"
-            - Ref: ApiGatewayRestApi
-            - ".execute-api."
-            - Ref: AWS::Region
-            - ".amazonaws.com/"
-            - ${opt:stage}
-      Export:
-        Name: sportnumerics-explorer-api-${opt:stage}-url
-
 functions:
   divs:
     handler: handlers.divs
