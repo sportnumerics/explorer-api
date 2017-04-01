@@ -19,6 +19,8 @@ custom:
   resultsBucketName: "sportnumerics-predict-${opt:stage}"
   resultsBucketArn: "arn:aws:s3:::sportnumerics-predict-${opt:stage}"
 
+resources: ${file(resources.yml)}
+
 functions:
   divs:
     handler: handlers.divs

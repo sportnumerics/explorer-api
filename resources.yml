@@ -1,0 +1,27 @@
+Resources:
+  CloudfrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Aliases:
+          - explorer-api.${opt:stage}.sportnumerics.com
+        DefaultCacheBehavior:
+          ForwardedValues:
+            QueryString: false
+            Headers:
+              - Access-Control-Allow-Origin
+          TargetOriginId: DefaultOrigin
+          ViewerProtocolPolicy: redirect-to-https
+          Compress: true
+          DefaultTTL: 120
+          MaxTTL: 86400
+        Enabled: true
+        Origins:
+        - DomainName:
+            Ref: ServiceEndpoint
+          Id: DefaultOrigin
+          S3OriginConfig: {}
+        PriceClass: PriceClass_All
+        ViewerCertificate:
+          AcmCertificateArn: arn:aws:acm:us-east-1:265978616089:certificate/198f3e8e-17ff-4da7-bca3-d5f42f473ee7
+          SslSupportMethod: sni-only
