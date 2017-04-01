@@ -18,7 +18,13 @@ Resources:
         Enabled: true
         Origins:
         - DomainName:
-            Ref: ServiceEndpoint
+            Fn::Join:
+              - ""
+              - - "https://"
+                - Ref: ApiGatewayRestApi
+                - ".execute-api."
+                - Ref: AWS::Region
+                - ".amazonaws.com/${opt:stage}"
           Id: DefaultOrigin
           S3OriginConfig: {}
         PriceClass: PriceClass_All
