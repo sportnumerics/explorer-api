@@ -42,3 +42,11 @@ Resources:
               - ${opt:stage}
               - certificate
           SslSupportMethod: sni-only
+Outputs:
+  CloudfrontEndpoint:
+    Fn::Join:
+      - ""
+      - - "https://"
+        - Fn::GetAtt:
+          - CloudfrontDistribution
+          - DomainName
