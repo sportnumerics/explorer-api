@@ -26,7 +26,8 @@ Resources:
                 - Ref: AWS::Region
                 - ".amazonaws.com/${opt:stage}"
           Id: DefaultOrigin
-          S3OriginConfig: {}
+          CustomOriginConfig:
+            OriginProtocolPolicy: https-only
         PriceClass: PriceClass_All
         ViewerCertificate:
           AcmCertificateArn: arn:aws:acm:us-east-1:265978616089:certificate/198f3e8e-17ff-4da7-bca3-d5f42f473ee7
