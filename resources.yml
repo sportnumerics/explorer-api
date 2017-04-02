@@ -49,13 +49,3 @@ Resources:
               - ${opt:stage}
               - certificate
           SslSupportMethod: sni-only
-Outputs:
-  CloudfrontEndpoint:
-    Description: "Cloudfront url fronting the API"
-    Value:
-      Fn::Join:
-        - ""
-        - - "https://"
-          - Fn::GetAtt:
-            - CloudfrontDistribution
-            - DomainName
