@@ -51,9 +51,11 @@ Resources:
           SslSupportMethod: sni-only
 Outputs:
   CloudfrontEndpoint:
-    Fn::Join:
-      - ""
-      - - "https://"
-        - Fn::GetAtt:
-          - CloudfrontDistribution
-          - DomainName
+    Description: "Cloudfront url fronting the API"
+    Value:
+      Fn::Join:
+        - ""
+        - - "https://"
+          - Fn::GetAtt:
+            - CloudfrontDistribution
+            - DomainName
