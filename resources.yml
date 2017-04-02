@@ -20,11 +20,11 @@ Resources:
         - DomainName:
             Fn::Join:
               - ""
-              - - "https://"
-                - Ref: ApiGatewayRestApi
+              - - Ref: ApiGatewayRestApi
                 - ".execute-api."
                 - Ref: AWS::Region
-                - ".amazonaws.com/${opt:stage}"
+                - ".amazonaws.com"
+          OriginPath: "/${opt:stage}"
           Id: DefaultOrigin
           CustomOriginConfig:
             OriginProtocolPolicy: https-only
