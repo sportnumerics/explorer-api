@@ -1,6 +1,6 @@
 'use strict';
 
-let getDivs = require('../service/divs');
+let getDivsByYear = require('../service/divs').getDivsByYear;
 let InvalidRequestError = require('../model/errors').InvalidRequestError;
 
 module.exports = function divs(params) {

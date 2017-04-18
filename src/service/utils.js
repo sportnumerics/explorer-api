@@ -7,7 +7,7 @@ let NotFoundError = require('../model/errors').NotFoundError;
 function parseS3Data(data) {
   let body = JSON.parse(data.Body);
   let meta = {
-    lastModified: moment.utc(Date.parse(data.LastModified))
+    lastModified: data.LastModified
   };
 
   return Object.assign({}, body, { meta });

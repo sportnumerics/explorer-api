@@ -10,7 +10,9 @@ function gamesWithPredictions(args) {
   let schedule = games.map(function(game) {
     return Object.assign({}, game, {predictions: predictGame(teamId, game.opponent.id, ratings)});
   });
-  return { schedule, meta };
+  let body = { schedule };
+  let headers = { 'Last-Modified': meta.lastModified }
+  return { body, headers }
 }
 
 module.exports = gamesWithPredictions;

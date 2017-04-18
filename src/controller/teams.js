@@ -1,8 +1,8 @@
 'use strict';
 
 global.Promise = require('bluebird');
-let getRatings = require('../service/ratings'),
-  getTeams = require('../service/teams'),
+let ratingsService = require('../service/ratings'),
+  teamsService = require('../service/teams'),
   joinTeamsWithRatings = require('../adapter/teamsWithRatings');
 
 module.exports = function teams(params) {
@@ -17,6 +17,8 @@ module.exports = function teams(params) {
     throw new InvalidRequestError('You must specify a division.');
   }
 
-  return Promise.all([getTeams(year, div), getRatings(year, div)])
+  return Promise.all([
+      teamsService.getTeamsByYearAndDiv(year, div),
+      ratingsService.getRatingsByYearAndDiv(year, div)])
     .then(joinTeamsWithRatings);
 };

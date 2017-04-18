@@ -1,8 +1,8 @@
 'use strict';
 
 global.Promise = require('bluebird');
-let getRatings = require('../service/ratings'),
-  getSchedule = require('../service/schedule'),
+let ratingsService = require('../service/ratings'),
+  scheduleService = require('../service/schedule'),
   joinGamesWithPredictions = require('../adapter/gamesWithPredictions'),
   InvalidRequestError = require('../model/errors').InvalidRequestError;
 
@@ -23,6 +23,9 @@ module.exports = function schedule(params) {
     throw new InvalidRequestError('You must specify a team id');
   }
 
-  return Promise.all([teamId, getSchedule(year, teamId), getRatings(year, div)])
+  return Promise.all([
+      teamId,
+      scheduleService.getScheduleByYearAndTeamId(year, teamId),
+      ratingsService.getRatingsByYearAndDiv(year, div)])
     .then(joinGamesWithPredictions);
 };

@@ -9,7 +9,9 @@ function teamsWithRatings(args) {
   teams = teams.map(function(team) {
     return Object.assign({}, team, {ratings: ratingsSummary(ratings[team.id])});
   });
-  return { teams, meta };
+  let body = { teams };
+  let headers = { 'Last-Modified': meta.lastModified };
+  return { body, headers };
 }
 
 module.exports = teamsWithRatings;
