@@ -1,5 +1,7 @@
-{
-    "body": {
+'use strict';
+
+module.exports = {
+    "data": {
         "schedule": [{
             "location": {
                 "type": "away"
@@ -251,8 +253,7 @@
             }
         }]
     },
-    "headers": {
-        "Expires": "Wed, 19 Apr 2017 11:45:11 GMT",
-        "Last-Modified": "Tue, 18 Apr 2017 11:45:11 GMT"
+    "meta": {
+        "lastModified": new Date("Mon, 17 Apr 2017 11:45:11 GMT")
     }
 }

@@ -2,6 +2,7 @@
 
 let divsService = require('../service/divs');
 let InvalidRequestError = require('../model/errors').InvalidRequestError;
+let utils = require('../adapter/utils');
 
 module.exports = function divs(params) {
   let year = params.year;
@@ -12,9 +13,10 @@ module.exports = function divs(params) {
 
   return divsService.getDivsByYear(year)
     .then((result) => {
-      let divisions = result.divisions;
+      console.log(result)
+      let divisions = result.data.divisions;
       let body = { divisions };
-      let headers = { 'Last-Modified': result.meta.lastModified };
+      let headers = utils.headers(result.meta);
       return { body, headers };
     });
 }

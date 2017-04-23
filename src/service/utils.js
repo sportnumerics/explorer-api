@@ -1,16 +1,15 @@
 'use strict';
 global.Promise = require('bluebird');
 let AWS = require('aws-sdk');
-let moment = require('moment');
 let NotFoundError = require('../model/errors').NotFoundError;
 
-function parseS3Data(data) {
-  let body = JSON.parse(data.Body);
+function parseS3Data(s3data) {
+  let data = JSON.parse(s3data.Body);
   let meta = {
-    lastModified: data.LastModified
+    lastModified: new Date(s3data.LastModified)
   };
 
-  return Object.assign({}, body, { meta });
+  return { data, meta }
 }
 
 function handleError(error) {

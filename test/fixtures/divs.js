@@ -1,5 +1,7 @@
-{
-    "body": {
+'use strict';
+
+module.exports = {
+    "data": {
         "divisions": [{
             "id": "1",
             "title": "NCAA Division 1"
@@ -11,8 +13,7 @@
             "title": "NCAA Division 3"
         }]
     },
-    "headers": {
-        "Expires": "Tue, 18 Apr 2017 11:45:11 GMT",
-        "Last-Modified": "Mon, 17 Apr 2017 11:45:11 GMT"
+    "meta": {
+        "lastModified": new Date("Mon, 17 Apr 2017 11:45:11 GMT")
     }
 }
