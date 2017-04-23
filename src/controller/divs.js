@@ -1,6 +1,6 @@
 'use strict';
 
-let getDivsByYear = require('../service/divs').getDivsByYear;
+let divsService = require('../service/divs');
 let InvalidRequestError = require('../model/errors').InvalidRequestError;
 
 module.exports = function divs(params) {
@@ -10,5 +10,11 @@ module.exports = function divs(params) {
     throw new InvalidRequestError('You must specify a year.');
   }
 
-  return getDivs(year);
+  return divsService.getDivsByYear(year)
+    .then((result) => {
+      let divisions = result.divisions;
+      let body = { divisions };
+      let headers = { 'Last-Modified': result.meta.lastModified };
+      return { body, headers };
+    });
 }

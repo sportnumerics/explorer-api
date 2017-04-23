@@ -18,16 +18,18 @@ function handleify(f) {
 }
 
 function createSuccessResponse(response) {
+  response = response || {};
   return {
     statusCode: 200,
-    headers: {
+    headers: Object.assign({}, response.headers, {
       "Access-Control-Allow-Origin": config.allowedOrigins
-    },
-    body: JSON.stringify(response)
+    }),
+    body: JSON.stringify(response.body)
   };
 }
 
 function createErrorResponse(error) {
+  error = error || {};
   console.log(`Got error`, error);
   return {
     statusCode: error.statusCode || 500,
@@ -46,6 +48,7 @@ function createErrorBody(error) {
 }
 
 module.exports = {
+  handleify,
   divs: handleify(divsController),
   schedule: handleify(scheduleController),
   teams: handleify(teamsController)
