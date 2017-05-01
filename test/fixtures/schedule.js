@@ -14,10 +14,6 @@ module.exports = {
             "result": {
                 "pointsFor": 11,
                 "pointsAgainst": 10
-            },
-            "predictions": {
-                "llsGoalsFor": 7.649659376217876,
-                "llsGoalsAgainst": 11.576589785712056
             }
         }, {
             "location": {
@@ -31,10 +27,6 @@ module.exports = {
             "result": {
                 "pointsFor": 6,
                 "pointsAgainst": 14
-            },
-            "predictions": {
-                "llsGoalsFor": 9.079707828123167,
-                "llsGoalsAgainst": 12.380529247592737
             }
         }, {
             "location": {
@@ -48,10 +40,6 @@ module.exports = {
             "result": {
                 "pointsFor": 4,
                 "pointsAgainst": 10
-            },
-            "predictions": {
-                "llsGoalsFor": 8.720660305483603,
-                "llsGoalsAgainst": 5.565730018902753
             }
         }, {
             "location": {
@@ -66,10 +54,6 @@ module.exports = {
             "result": {
                 "pointsFor": 15,
                 "pointsAgainst": 10
-            },
-            "predictions": {
-                "llsGoalsFor": 12.095650494704405,
-                "llsGoalsAgainst": 8.019496721848512
             }
         }, {
             "location": {
@@ -84,10 +68,6 @@ module.exports = {
             "result": {
                 "pointsFor": 16,
                 "pointsAgainst": 2
-            },
-            "predictions": {
-                "llsGoalsFor": 14.853189448377002,
-                "llsGoalsAgainst": 4.38809638176481
             }
         }, {
             "location": {
@@ -101,10 +81,6 @@ module.exports = {
             "result": {
                 "pointsFor": 6,
                 "pointsAgainst": 8
-            },
-            "predictions": {
-                "llsGoalsFor": 8.686603831730931,
-                "llsGoalsAgainst": 9.415524163123322
             }
         }, {
             "location": {
@@ -118,10 +94,6 @@ module.exports = {
             "result": {
                 "pointsFor": 13,
                 "pointsAgainst": 8
-            },
-            "predictions": {
-                "llsGoalsFor": 11.919058760579006,
-                "llsGoalsAgainst": 5.662213591404594
             }
         }, {
             "location": {
@@ -135,10 +107,6 @@ module.exports = {
             "result": {
                 "pointsFor": 14,
                 "pointsAgainst": 6
-            },
-            "predictions": {
-                "llsGoalsFor": 12.61024217778834,
-                "llsGoalsAgainst": 6.1481686358131835
             }
         }, {
             "location": {
@@ -152,10 +120,6 @@ module.exports = {
             "result": {
                 "pointsFor": 10,
                 "pointsAgainst": 9
-            },
-            "predictions": {
-                "llsGoalsFor": 13.428169573831397,
-                "llsGoalsAgainst": 7.011953534845889
             }
         }, {
             "location": {
@@ -169,10 +133,6 @@ module.exports = {
             "result": {
                 "pointsFor": 6,
                 "pointsAgainst": 7
-            },
-            "predictions": {
-                "llsGoalsFor": 8.23512919747654,
-                "llsGoalsAgainst": 8.374613888381703
             }
         }, {
             "location": {
@@ -186,10 +146,6 @@ module.exports = {
             "result": {
                 "pointsFor": 20,
                 "pointsAgainst": 2
-            },
-            "predictions": {
-                "llsGoalsFor": 14.485805838767783,
-                "llsGoalsAgainst": 6.460897153927711
             }
         }, {
             "location": {
@@ -203,10 +159,6 @@ module.exports = {
             "result": {
                 "pointsFor": 7,
                 "pointsAgainst": 8
-            },
-            "predictions": {
-                "llsGoalsFor": 9.220664587464904,
-                "llsGoalsAgainst": 7.698090883449549
             }
         }, {
             "location": {
@@ -220,10 +172,6 @@ module.exports = {
             "result": {
                 "pointsFor": 14,
                 "pointsAgainst": 4
-            },
-            "predictions": {
-                "llsGoalsFor": 15.066617949317818,
-                "llsGoalsAgainst": 4.890502578136424
             }
         }, {
             "location": {
@@ -233,11 +181,7 @@ module.exports = {
                 "id": 575,
                 "name": "Richmond"
             },
-            "date": "2017-04-22T00:00:00.000Z",
-            "predictions": {
-                "llsGoalsFor": 6.64521761096983,
-                "llsGoalsAgainst": 7.882948339832837
-            }
+            "date": "2017-04-22T00:00:00.000Z"
         }, {
             "location": {
                 "type": "away"
@@ -246,11 +190,7 @@ module.exports = {
                 "id": 19651,
                 "name": "High Point"
             },
-            "date": "2017-04-29T00:00:00.000Z",
-            "predictions": {
-                "llsGoalsFor": 10.945829432591616,
-                "llsGoalsAgainst": 6.171993367445776
-            }
+            "date": "2017-04-29T00:00:00.000Z"
         }]
     },
     "meta": {

@@ -7,7 +7,8 @@
     "test-divs": "sls invoke local --function divs --stage dev --path fixtures/invocations/divs.json",
     "test-teams": "sls invoke local --function teams --stage dev --path fixtures/invocations/teams.json",
     "test-schedule": "sls invoke local --function schedule --stage dev --path fixtures/invocations/schedule.json",
-    "test": "NODE_ENV=test mocha $(find test -name '*.js')"
+    "test": "NODE_ENV=test mocha $(find test -name '*.js')",
+    "serve": "NODE_ENV=local node serve-local.js"
   },
   "author": "",
   "license": "ISC",

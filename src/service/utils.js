@@ -2,6 +2,9 @@
 global.Promise = require('bluebird');
 let AWS = require('aws-sdk');
 let NotFoundError = require('../model/errors').NotFoundError;
+let _ = require('lodash');
+let config = require('config');
+let path = require('path');
 
 function parseS3Data(s3data) {
   let data = JSON.parse(s3data.Body);
@@ -34,6 +37,26 @@ function fetchFromS3(bucket, key) {
   });
 }
 
+function fetchFromMocks(bucket, key) {
+  return new Promise((resolve, reject) => {
+    let mockSrc = _(config.mocks)
+      .pick((src, test) => key.match(test))
+      .values().first();
+    if (mockSrc) {
+      let src = path.join('../../', mockSrc);
+      let object = require(src);
+      console.log(`Resolving S3 key ${key} with local object: ${mockSrc}`);
+      resolve(object);
+    } else {
+      reject(new NotFoundError());
+    }
+  });
+}
+
+function shouldUseMocks() {
+  return process.env.NODE_ENV === 'local'
+}
+
 module.exports = {
-  fetchFromS3
+  fetchFromS3: shouldUseMocks() ? fetchFromMocks : fetchFromS3
 };

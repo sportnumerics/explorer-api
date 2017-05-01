@@ -1,0 +1,10 @@
+{
+  "corsOrigin": "*",
+  "mocks": {
+    "^years/[\\d]{4}/divs$": "./test/fixtures/divs.js",
+    "^years/[\\d]{4}/divs/[\\d]/ratings.json$": "./test/fixtures/ratings.js",
+    "^years/[\\d]{4}/teams/[\\d]*/schedule$": "./test/fixtures/schedule.js",
+    "^years/[\\d]{4}/divs/[\\d]/teams$": "./test/fixtures/teams.js"
+  },
+  "allowedOrigins": "*"
+}
