@@ -6,7 +6,7 @@ const express = require('express'),
   _ = require('lodash');
 let app = express();
 
-let port = 8000;
+let port = 3000;
 
 let serverlessConfig = yaml.safeLoad(fs.readFileSync('serverless.yml'));
 
