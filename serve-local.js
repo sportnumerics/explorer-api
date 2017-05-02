@@ -13,13 +13,15 @@ let serverlessConfig = yaml.safeLoad(fs.readFileSync('serverless.yml'));
 _(serverlessConfig.functions)
   .values()
   .filter(httpFunction)
-  .each(f => {
+  .value()
+  .forEach(f => {
     let slsHandler = getHandler(f.handler);
     let handler = expressifyHandler(slsHandler);
 
     _(f.events)
       .filter(httpEvent)
-      .each(e => {
+      .value()
+      .forEach(e => {
         let http = e.http;
         let path = expressifyPath(http.path);
 
@@ -30,8 +32,8 @@ _(serverlessConfig.functions)
         } else {
           console.log(`WARNING: Unsupported method ${method}`);
         }
-      }).value();
-  }).value();
+      });
+  });
 
 
 function getHandler(string) {
@@ -73,7 +75,7 @@ function expressifyResponse(res) {
 }
 
 function httpFunction(f) {
-  return _.any(f.events, httpEvent)
+  return _.some(f.events, httpEvent)
 }
 
 function httpEvent(e) {
