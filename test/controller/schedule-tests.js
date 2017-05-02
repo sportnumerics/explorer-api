@@ -3,11 +3,12 @@
 const controller = require('../../src/controller/schedule');
 const ratingsService = require('../../src/service/ratings');
 const scheduleService = require('../../src/service/schedule');
+const teamsService = require('../../src/service/teams');
 const fixtures = require('../fixtures');
 const sinon = require('sinon');
 
 describe('schedule controller', () => {
-  let ratingsMock, scheduleMock;
+  let ratingsMock, scheduleMock, teamsMock;
 
   it('should join games from the schedule service with predictions from ratings service', () => {
     let year = '2017';
@@ -26,16 +27,24 @@ describe('schedule controller', () => {
       .withArgs(year, id)
       .returns(Promise.resolve(fixtures.scheduleJson));
 
+    teamsMock = sinon.mock(teamsService);
+
+    teamsMock.expects('getTeamsByYearAndDiv')
+      .withArgs(year, div)
+      .returns(Promise.resolve(fixtures.teamsJson));
+
     return controller({ year, div, id })
       .then((result) => {
         expect(result).to.deep.equal(fixtures.expectedScheduleControllerResult);
         ratingsMock.verify();
         scheduleMock.verify();
+        teamsMock.verify();
       });
   });
 
   afterEach(() => {
     ratingsMock.restore();
     scheduleMock.restore();
+    teamsMock.restore();
   })
 });

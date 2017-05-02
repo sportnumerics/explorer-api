@@ -17,8 +17,8 @@ module.exports = function teams(params) {
     throw new InvalidRequestError('You must specify a division.');
   }
 
-  return Promise.all([
-      teamsService.getTeamsByYearAndDiv(year, div),
-      ratingsService.getRatingsByYearAndDiv(year, div)])
-    .then(joinTeamsWithRatings);
+  return Promise.props({
+      teamsRes: teamsService.getTeamsByYearAndDiv(year, div),
+      ratingsRes: ratingsService.getRatingsByYearAndDiv(year, div)
+    }).then(joinTeamsWithRatings);
 };

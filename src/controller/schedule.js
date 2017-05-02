@@ -3,6 +3,7 @@
 global.Promise = require('bluebird');
 let ratingsService = require('../service/ratings'),
   scheduleService = require('../service/schedule'),
+  teamsService = require('../service/teams'),
   joinGamesWithPredictions = require('../adapter/gamesWithPredictions'),
   InvalidRequestError = require('../model/errors').InvalidRequestError;
 
@@ -20,12 +21,13 @@ module.exports = function schedule(params) {
   }
 
   if (!teamId) {
-    throw new InvalidRequestError('You must specify a team id');
+    throw new InvalidRequestError('You must specify an integer team id');
   }
 
-  return Promise.all([
+  return Promise.props({
       teamId,
-      scheduleService.getScheduleByYearAndTeamId(year, teamId),
-      ratingsService.getRatingsByYearAndDiv(year, div)])
-    .then(joinGamesWithPredictions);
+      scheduleRes: scheduleService.getScheduleByYearAndTeamId(year, teamId),
+      ratingsRes: ratingsService.getRatingsByYearAndDiv(year, div),
+      teamsRes: teamsService.getTeamsByYearAndDiv(year, div)
+    }).then(joinGamesWithPredictions);
 };
