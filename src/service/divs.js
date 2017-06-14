@@ -1,6 +1,5 @@
 'use strict';
 
-let config = require('config').get('divs');
 let utils = require('./utils');
 
 const TABLE = process.env.DIVS_TABLE_NAME

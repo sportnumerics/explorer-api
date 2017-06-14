@@ -1,6 +1,5 @@
 'use strict';
 
-let config = require('config').get('teams');
 let utils = require('./utils');
 let fs = require('fs');
 

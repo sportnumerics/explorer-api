@@ -8,8 +8,6 @@ let divsController = require('./src/controller/divs'),
 
 function handleify(f) {
   return (event, context, callback) => {
-    console.log(`Entering function`, event, context);
-    console.log(`process.env.NODE_ENV: `, process.env.NODE_ENV)
     f(Object.assign({}, event.pathParameters))
     .then(createSuccessResponse)
     .catch(createErrorResponse)
