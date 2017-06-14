@@ -17,8 +17,6 @@ provider:
     NODE_ENV: ${opt:stage}
     TEAMS_TABLE_NAME: ${cf:sportnumerics-stats-${opt:stage}.TeamsTableName}
     DIVS_TABLE_NAME: ${cf:sportnumerics-stats-${opt:stage}.DivsTableName}
-    AWS_DEFAULT_REGION:
-      Ref: AWS::Region
 custom:
   resultsBucketName: "sportnumerics-predict-${opt:stage}"
   resultsBucketArn: "arn:aws:s3:::sportnumerics-predict-${opt:stage}"
