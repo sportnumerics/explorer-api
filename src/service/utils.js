@@ -6,6 +6,17 @@ let _ = require('lodash');
 let config = require('config');
 let path = require('path');
 
+AWS.config.update({region: process.env['AWS_DEFAULT_REGION']});
+const db = Promise.promisifyAll(new AWS.DynamoDB.DocumentClient());
+
+function queryDb(params) {
+  return db.queryAsync(params);
+}
+
+function batchQueryDb(params) {
+  return db.batchGetAsync(params);
+}
+
 function parseS3Data(s3data) {
   let data = JSON.parse(s3data.Body);
   let meta = {
@@ -58,5 +69,7 @@ function shouldUseMocks() {
 }
 
 module.exports = {
-  fetchFromS3: shouldUseMocks() ? fetchFromMocks : fetchFromS3
+  fetchFromS3: shouldUseMocks() ? fetchFromMocks : fetchFromS3,
+  queryDb,
+  batchQueryDb
 };

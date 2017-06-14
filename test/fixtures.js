@@ -9,8 +9,8 @@ chai.use(chaiAsPromised);
 global.expect = chai.expect;
 
 module.exports = {
-  ratingsJson: require('./fixtures/ratings'),
   scheduleJson: require('./fixtures/schedule'),
+  batchScheduleJson: require('./fixtures/team-193-19651'),
   teamsJson: require('./fixtures/teams'),
   divsJson: require('./fixtures/divs'),
   expectedScheduleControllerResult: require('./fixtures/expected-schedule-controller-result'),

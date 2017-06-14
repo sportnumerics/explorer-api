@@ -1,12 +1,20 @@
 'use strict';
 
-let config = require('config').get('teams');
+let config = require('config').get('divs');
 let utils = require('./utils');
 
-function getDivsByYear(year) {
-  let key = `years/${year}/divs`;
+const TABLE = process.env.DIVS_TABLE_NAME
 
-  return utils.fetchFromS3(config.bucket, key);
+function getDivsByYear(year) {
+  return utils.queryDb({
+    TableName: TABLE,
+    KeyConditionExpression: 'season = :season',
+    ExpressionAttributeValues: {
+      ':season': year
+    }
+  }).then(data => {
+    return data.Items[0];
+  });
 }
 
 module.exports = {

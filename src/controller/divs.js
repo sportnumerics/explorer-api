@@ -13,10 +13,9 @@ module.exports = function divs(params) {
 
   return divsService.getDivsByYear(year)
     .then((result) => {
-      console.log(result)
-      let divisions = result.data.divisions;
+      let divisions = result.divisions;
       let body = { divisions };
-      let headers = utils.headers(result.meta);
+      let headers = utils.headers({ lastModified: utils.defaultDate() });
       return { body, headers };
     });
 }

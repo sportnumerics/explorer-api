@@ -2,13 +2,22 @@
 
 let config = require('config').get('teams');
 let utils = require('./utils');
+let _ = require('lodash');
 
-function getScheduleByYearAndTeamId(year, teamId) {
-  let key = `years/${year}/teams/${teamId}/schedule`;
+const TABLE = process.env.TEAMS_TABLE_NAME;
 
-  return utils.fetchFromS3(config.bucket, key);
+function getSchedulesByYearAndTeamIds(season, teamIds) {
+  return utils.batchQueryDb({
+    RequestItems: {
+      [TABLE]: {
+        Keys: _(teamIds).uniq().map(id => ({ id, season })).value()
+      }
+    }
+  }).then(data => {
+    return data.Responses[TABLE];
+  });
 };
 
 module.exports = {
-  getScheduleByYearAndTeamId
+  getSchedulesByYearAndTeamIds
 };

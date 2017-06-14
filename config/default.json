@@ -1,13 +1,4 @@
 {
   "corsOrigin": "*",
-  "divs": {
-    "bucket": "sportnumerics-stats-dev"
-  },
-  "teams": {
-    "bucket": "sportnumerics-stats-dev"
-  },
-  "ratings": {
-    "bucket": "sportnumerics-predict-dev"
-  },
   "timeToLive": 86400
 }

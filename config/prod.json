@@ -1,13 +1,4 @@
 {
   "corsOrigin": "*",
-  "divs": {
-    "bucket": "sportnumerics-stats-prod"
-  },
-  "teams": {
-    "bucket": "sportnumerics-stats-prod"
-  },
-  "ratings": {
-    "bucket": "sportnumerics-predict-prod"
-  },
   "allowedOrigins": "*"
 }

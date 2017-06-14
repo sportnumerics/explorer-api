@@ -1,577 +1,649 @@
 {
     "body": {
-        "teams": [{
-            "id": 721,
-            "name": "Air Force",
-            "ratings": {
-                "offense": 6.299098341278304,
-                "defense": -2.1744160736480227,
-                "overall": -5.014055174904024
-            }
-        }, {
-            "id": 14,
-            "name": "Albany (NY)",
-            "ratings": {
-                "offense": 11.751866110608157,
-                "defense": -2.6131286680738524,
-                "overall": 0
-            }
-        }, {
-            "id": 725,
-            "name": "Army West Point",
-            "ratings": {
-                "offense": 7.139214158482174,
-                "defense": -2.070209282479588,
-                "overall": -4.069732566531719
-            }
-        }, {
-            "id": 52,
-            "name": "Bellarmine",
-            "ratings": {
-                "offense": 4.286481080279688,
-                "defense": -8.18670749748948,
-                "overall": -13.038963859744097
-            }
-        }, {
-            "id": 62,
-            "name": "Binghamton",
-            "ratings": {
-                "offense": 5.417397966219604,
-                "defense": -2.418945300900504,
-                "overall": -6.140284777215205
-            }
-        }, {
-            "id": 68,
-            "name": "Boston U.",
-            "ratings": {
-                "offense": 7.2411080894753,
-                "defense": -2.387505490452628,
-                "overall": -4.285134843511633
-            }
-        }, {
-            "id": 80,
-            "name": "Brown",
-            "ratings": {
-                "offense": 10.138252392180723,
-                "defense": -7.309485066617658,
-                "overall": -6.30997011697124
-            }
-        }, {
-            "id": 81,
-            "name": "Bryant",
-            "ratings": {
-                "offense": 4.845118637481835,
-                "defense": -2.755638543581597,
-                "overall": -7.049257348634067
-            }
-        }, {
-            "id": 83,
-            "name": "Bucknell",
-            "ratings": {
-                "offense": 5.893993562488232,
-                "defense": -4.789823695170184,
-                "overall": -8.034567575216258
-            }
-        }, {
-            "id": 116,
-            "name": "Canisius",
-            "ratings": {
-                "offense": 5.845080648200489,
-                "defense": -5.7965521534260995,
-                "overall": -9.090208947759916
-            }
-        }, {
-            "id": 148,
-            "name": "Cleveland St.",
-            "ratings": {
-                "offense": 2.2136803081167873,
-                "defense": -8.554091107098698,
-                "overall": -15.479148241516215
-            }
-        }, {
-            "id": 153,
-            "name": "Colgate",
-            "ratings": {
-                "offense": 5.283417842378754,
-                "defense": -4.8241309953390346,
-                "overall": -8.679450595494586
-            }
-        }, {
-            "id": 167,
-            "name": "Cornell",
-            "ratings": {
-                "offense": 7.453464892527057,
-                "defense": -5.644572012933723,
-                "overall": -7.329844562940971
-            }
-        }, {
-            "id": 172,
-            "name": "Dartmouth",
-            "ratings": {
-                "offense": 2.9854441441972863,
-                "defense": -5.900651956021139,
-                "overall": -12.053945254358158
-            }
-        }, {
-            "id": 180,
-            "name": "Delaware",
-            "ratings": {
-                "offense": 6.7297547899131125,
-                "defense": -4.416892090298464,
-                "overall": -6.825874742919656
-            }
-        }, {
-            "id": 183,
-            "name": "Denver",
-            "ratings": {
-                "offense": 10.206113173944715,
-                "defense": -2.7806094868448628,
-                "overall": -1.7132337554344534
-            }
-        }, {
-            "id": 184,
-            "name": "Detroit Mercy",
-            "ratings": {
-                "offense": 3.487797517756571,
-                "defense": -5.619960419300702,
-                "overall": -11.270900344078436
-            }
-        }, {
-            "id": 191,
-            "name": "Drexel",
-            "ratings": {
-                "offense": 6.542714556764195,
-                "defense": -4.784673589560346,
-                "overall": -7.380696475330456
-            }
-        }, {
-            "id": 193,
-            "name": "Duke",
-            "ratings": {
-                "offense": 9.402173712064034,
-                "defense": -1.3505610349395722,
-                "overall": -1.0871247654098433
-            }
-        }, {
-            "id": 220,
-            "name": "Fairfield",
-            "ratings": {
-                "offense": 4.181344884289102,
-                "defense": -4.189997314585274,
-                "overall": -9.147389872830477
-            }
-        }, {
-            "id": 244,
-            "name": "Furman",
-            "ratings": {
-                "offense": 5.523674809801526,
-                "defense": -2.9215662461866003,
-                "overall": -6.536628878919379
-            }
-        }, {
-            "id": 251,
-            "name": "Georgetown",
-            "ratings": {
-                "offense": 7.156370668414666,
-                "defense": -4.87043754798393,
-                "overall": -6.8528043221035695
-            }
-        }, {
-            "id": 270,
-            "name": "Hampton",
-            "ratings": {
-                "offense": -5.231746164889738,
-                "defense": -11.602672544897858,
-                "overall": -25.9731561523219
-            }
-        }, {
-            "id": 272,
-            "name": "Hartford",
-            "ratings": {
-                "offense": 5.955249829968214,
-                "defense": -5.67747297878888,
-                "overall": -8.86096059135497
-            }
-        }, {
-            "id": 275,
-            "name": "Harvard",
-            "ratings": {
-                "offense": 6.725084396779068,
-                "defense": -4.414065385152919,
-                "overall": -6.827718430908156
-            }
-        }, {
-            "id": 19651,
-            "name": "High Point",
-            "ratings": {
-                "offense": 3.997577293797753,
-                "defense": -4.646731091313312,
-                "overall": -9.787891240049865
-            }
-        }, {
-            "id": 282,
-            "name": "Hobart and William Smith Colleges",
-            "ratings": {
-                "offense": 7.03356946524071,
-                "defense": -5.6196783735988625,
-                "overall": -7.724846350892458
-            }
-        }, {
-            "id": 283,
-            "name": "Hofstra",
-            "ratings": {
-                "offense": 7.071194916897087,
-                "defense": -2.286158313028201,
-                "overall": -4.353700838665419
-            }
-        }, {
-            "id": 285,
-            "name": "Holy Cross",
-            "ratings": {
-                "offense": 4.433236858661546,
-                "defense": -4.638168738278354,
-                "overall": -9.343669322151113
-            }
-        }, {
-            "id": 316,
-            "name": "Jacksonville",
-            "ratings": {
-                "offense": 4.837537461197866,
-                "defense": -7.129071232553092,
-                "overall": -11.430271213889531
-            }
-        }, {
-            "id": 322,
-            "name": "Johns Hopkins",
-            "ratings": {
-                "offense": 9.010035531011946,
-                "defense": -2.630874924916922,
-                "overall": -2.7595768364392814
-            }
-        }, {
-            "id": 342,
-            "name": "Lafayette",
-            "ratings": {
-                "offense": 3.5287803881857496,
-                "defense": -7.350674726680319,
-                "overall": -12.960631781028875
-            }
-        }, {
-            "id": 352,
-            "name": "Lehigh",
-            "ratings": {
-                "offense": 5.78407887476652,
-                "defense": -4.066119543380462,
-                "overall": -7.420778111148247
-            }
-        }, {
-            "id": 369,
-            "name": "Loyola Maryland",
-            "ratings": {
-                "offense": 8.889528203914233,
-                "defense": -2.7793123377678466,
-                "overall": -3.0285215763879183
-            }
-        }, {
-            "id": 381,
-            "name": "Manhattan",
-            "ratings": {
-                "offense": 3.661226969078971,
-                "defense": -9.881061227926754,
-                "overall": -15.358571701382088
-            }
-        }, {
-            "id": 386,
-            "name": "Marist",
-            "ratings": {
-                "offense": 3.391313945254731,
-                "defense": -2.4215619642052997,
-                "overall": -8.168985461484873
-            }
-        }, {
-            "id": 387,
-            "name": "Marquette",
-            "ratings": {
-                "offense": 6.200197814733679,
-                "defense": -1.936030856198237,
-                "overall": -4.874570483998863
-            }
-        }, {
-            "id": 392,
-            "name": "Maryland",
-            "ratings": {
-                "offense": 10.105678736688587,
-                "defense": -1.4310232059787922,
-                "overall": -0.4640819118245112
-            }
-        }, {
-            "id": 400,
-            "name": "Massachusetts",
-            "ratings": {
-                "offense": 4.716154478917459,
-                "defense": -2.408790679502693,
-                "overall": -6.831373643119539
-            }
-        }, {
-            "id": 406,
-            "name": "Mercer",
-            "ratings": {
-                "offense": 3.9737525621651604,
-                "defense": -6.311143836510036,
-                "overall": -11.476128716879181
-            }
-        }, {
-            "id": 418,
-            "name": "Michigan",
-            "ratings": {
-                "offense": 6.288253173281074,
-                "defense": -4.615525941222541,
-                "overall": -7.466010210475772
-            }
-        }, {
-            "id": 439,
-            "name": "Monmouth",
-            "ratings": {
-                "offense": 4.183483664889903,
-                "defense": -3.2064120537692693,
-                "overall": -8.161665831413671
-            }
-        }, {
-            "id": 450,
-            "name": "Mt. St. Mary's",
-            "ratings": {
-                "offense": 4.3639358172372065,
-                "defense": -5.700012505617909,
-                "overall": -10.474814130915007
-            }
-        }, {
-            "id": 471,
-            "name": "NJIT",
-            "ratings": {
-                "offense": 2.0582338467669103,
-                "defense": -8.402702138770017,
-                "overall": -15.483205734537412
-            }
-        }, {
-            "id": 726,
-            "name": "Navy",
-            "ratings": {
-                "offense": 5.738751535564771,
-                "defense": -3.0625777913648866,
-                "overall": -6.462563698334421
-            }
-        }, {
-            "id": 457,
-            "name": "North Carolina",
-            "ratings": {
-                "offense": 8.325289868276702,
-                "defense": -1.8890698611773222,
-                "overall": -2.7025174354349257
-            }
-        }, {
-            "id": 513,
-            "name": "Notre Dame",
-            "ratings": {
-                "offense": 8.343700548726282,
-                "defense": -0.5087775891548506,
-                "overall": -1.3038144829628733
-            }
-        }, {
-            "id": 518,
-            "name": "Ohio St.",
-            "ratings": {
-                "offense": 7.529575553377176,
-                "defense": -1.6161787145294626,
-                "overall": -3.2253406036865915
-            }
-        }, {
-            "id": 540,
-            "name": "Penn",
-            "ratings": {
-                "offense": 6.1622182624005575,
-                "defense": -3.1108435642095102,
-                "overall": -6.087362744343258
-            }
-        }, {
-            "id": 539,
-            "name": "Penn St.",
-            "ratings": {
-                "offense": 9.970436577025751,
-                "defense": -4.160529982685806,
-                "overall": -3.32883084819436
-            }
-        }, {
-            "id": 554,
-            "name": "Princeton",
-            "ratings": {
-                "offense": 10.278000837392067,
-                "defense": -4.413058213216723,
-                "overall": -3.2737948183589607
-            }
-        }, {
-            "id": 556,
-            "name": "Providence",
-            "ratings": {
-                "offense": 6.058285967495986,
-                "defense": -1.3819767256198967,
-                "overall": -4.462428200658215
-            }
-        }, {
-            "id": 562,
-            "name": "Quinnipiac",
-            "ratings": {
-                "offense": 3.6535088658899193,
-                "defense": -6.506662203821734,
-                "overall": -11.99189078046612
-            }
-        }, {
-            "id": 575,
-            "name": "Richmond",
-            "ratings": {
-                "offense": 5.708532266184815,
-                "defense": -0.3461192696915256,
-                "overall": -3.7763244460410164
-            }
-        }, {
-            "id": 579,
-            "name": "Robert Morris",
-            "ratings": {
-                "offense": 5.987391150335868,
-                "defense": -4.124913240499569,
-                "overall": -7.276259532698006
-            }
-        }, {
-            "id": 587,
-            "name": "Rutgers",
-            "ratings": {
-                "offense": 7.069509326791308,
-                "defense": -1.94731529946558,
-                "overall": -4.016543415208577
-            }
-        }, {
-            "id": 590,
-            "name": "Sacred Heart",
-            "ratings": {
-                "offense": 6.188213704683972,
-                "defense": -4.215810953293415,
-                "overall": -7.166334691143748
-            }
-        }, {
-            "id": 606,
-            "name": "Saint Joseph's",
-            "ratings": {
-                "offense": 3.597789754840346,
-                "defense": -4.000917555639862,
-                "overall": -9.541865243333822
-            }
-        }, {
-            "id": 639,
-            "name": "Siena",
-            "ratings": {
-                "offense": 5.694769925927203,
-                "defense": -8.700511996161598,
-                "overall": -12.1444795127687
-            }
-        }, {
-            "id": 603,
-            "name": "St. John's (NY)",
-            "ratings": {
-                "offense": 4.14744651755059,
-                "defense": -6.929016485650526,
-                "overall": -11.92030741063424
-            }
-        }, {
-            "id": 683,
-            "name": "Stony Brook",
-            "ratings": {
-                "offense": 7.191332514022107,
-                "defense": -4.732619066252992,
-                "overall": -6.6800239947651905
-            }
-        }, {
-            "id": 688,
-            "name": "Syracuse",
-            "ratings": {
-                "offense": 8.694137445376356,
-                "defense": -1.6841014666602436,
-                "overall": -2.128701463818193
-            }
-        }, {
-            "id": 711,
-            "name": "Towson",
-            "ratings": {
-                "offense": 6.002953899089116,
-                "defense": -0.9466978423257598,
-                "overall": -4.082481385770949
-            }
-        }, {
-            "id": 391,
-            "name": "UMBC",
-            "ratings": {
-                "offense": 4.38883887171249,
-                "defense": -2.982679685231223,
-                "overall": -7.732578256053038
-            }
-        }, {
-            "id": 368,
-            "name": "UMass Lowell",
-            "ratings": {
-                "offense": 4.821827179442669,
-                "defense": -6.519176620657129,
-                "overall": -10.836086883748766
-            }
-        }, {
-            "id": 741,
-            "name": "VMI",
-            "ratings": {
-                "offense": 2.716086504488401,
-                "defense": -8.767519608039514,
-                "overall": -15.190170546085419
-            }
-        }, {
-            "id": 738,
-            "name": "Vermont",
-            "ratings": {
-                "offense": 5.771272671846945,
-                "defense": -5.331219655973259,
-                "overall": -8.69868442666062
-            }
-        }, {
-            "id": 739,
-            "name": "Villanova",
-            "ratings": {
-                "offense": 9.147924041494635,
-                "defense": -5.096956700165119,
-                "overall": -5.087770101204789
-            }
-        }, {
-            "id": 746,
-            "name": "Virginia",
-            "ratings": {
-                "offense": 11.173351679728762,
-                "defense": -6.408088077101263,
-                "overall": -4.373473839906806
-            }
-        }, {
-            "id": 748,
-            "name": "Wagner",
-            "ratings": {
-                "offense": 1.4176619605441232,
-                "defense": -5.525016435323596,
-                "overall": -13.246091917313777
-            }
-        }, {
-            "id": 813,
-            "name": "Yale",
-            "ratings": {
-                "offense": 9.528178968189518,
-                "defense": -3.348995693527847,
-                "overall": -2.959554167872634
-            }
-        }]
+        "teams": [
+            {
+                "name": "Wagner",
+                "id": "748",
+                "ratings": {
+                    "offense": 6.902701798688587,
+                    "defense": -0.7990669209161307,
+                    "overall": -13.808715269581008
+                }
+            },
+            {
+                "name": "Marquette",
+                "id": "387",
+                "ratings": {
+                    "offense": 11.931546723103821,
+                    "defense": 3.203442343518334,
+                    "overall": -4.777361080731309
+                }
+            },
+            {
+                "name": "Cornell",
+                "id": "167",
+                "ratings": {
+                    "offense": 12.923700563483044,
+                    "defense": -0.4461963646779996,
+                    "overall": -7.434845948548421
+                }
+            },
+            {
+                "name": "Harvard",
+                "id": "275",
+                "ratings": {
+                    "offense": 11.764038179441465,
+                    "defense": 1.5364723074518323,
+                    "overall": -6.611839660460166
+                }
+            },
+            {
+                "name": "Dartmouth",
+                "id": "172",
+                "ratings": {
+                    "offense": 7.608290083461324,
+                    "defense": -0.6595648091058045,
+                    "overall": -12.963624872997944
+                }
+            },
+            {
+                "name": "Ohio St.",
+                "id": "518",
+                "ratings": {
+                    "offense": 13.751309717659653,
+                    "defense": 3.8460099876039333,
+                    "overall": -2.3150304420898777
+                }
+            },
+            {
+                "name": "Georgetown",
+                "id": "251",
+                "ratings": {
+                    "offense": 12.15197474451841,
+                    "defense": 0.7573312476515379,
+                    "overall": -7.003044155183517
+                }
+            },
+            {
+                "name": "Princeton",
+                "id": "554",
+                "ratings": {
+                    "offense": 15.374478973740704,
+                    "defense": 0.14064468784823186,
+                    "overall": -4.397226485764529
+                }
+            },
+            {
+                "name": "Drexel",
+                "id": "191",
+                "ratings": {
+                    "offense": 11.686855679996258,
+                    "defense": 0.6691846503485179,
+                    "overall": -7.556309817008689
+                }
+            },
+            {
+                "name": "Marist",
+                "id": "386",
+                "ratings": {
+                    "offense": 8.216043046313247,
+                    "defense": 2.9002465012307117,
+                    "overall": -8.796060599809506
+                }
+            },
+            {
+                "name": "Monmouth",
+                "id": "439",
+                "ratings": {
+                    "offense": 9.394169456404386,
+                    "defense": 2.0479589058900776,
+                    "overall": -8.470221785059001
+                }
+            },
+            {
+                "name": "UMass Lowell",
+                "id": "368",
+                "ratings": {
+                    "offense": 10.148480089147073,
+                    "defense": -1.1585720908641013,
+                    "overall": -10.922442149070493
+                }
+            },
+            {
+                "name": "Robert Morris",
+                "id": "579",
+                "ratings": {
+                    "offense": 10.764416909420563,
+                    "defense": 0.3881176119485112,
+                    "overall": -8.759815625984391
+                }
+            },
+            {
+                "name": "Syracuse",
+                "id": "688",
+                "ratings": {
+                    "offense": 13.648322245406808,
+                    "defense": 2.6229882922635914,
+                    "overall": -3.641039609683066
+                }
+            },
+            {
+                "name": "Jacksonville",
+                "id": "316",
+                "ratings": {
+                    "offense": 10.280863289423696,
+                    "defense": -1.500560048042191,
+                    "overall": -11.13204690597196
+                }
+            },
+            {
+                "name": "Lehigh",
+                "id": "352",
+                "ratings": {
+                    "offense": 10.483321816694911,
+                    "defense": 1.4885797879408942,
+                    "overall": -7.940448542717659
+                }
+            },
+            {
+                "name": "Stony Brook",
+                "id": "683",
+                "ratings": {
+                    "offense": 11.564394677286552,
+                    "defense": 0.5283623247114129,
+                    "overall": -7.819593145355499
+                }
+            },
+            {
+                "name": "Lafayette",
+                "id": "342",
+                "ratings": {
+                    "offense": 8.3784323055086,
+                    "defense": -2.064254843906538,
+                    "overall": -13.598172685751402
+                }
+            },
+            {
+                "name": "Canisius",
+                "id": "116",
+                "ratings": {
+                    "offense": 10.482729482535381,
+                    "defense": -0.47741687792473797,
+                    "overall": -9.90703754274282
+                }
+            },
+            {
+                "name": "Villanova",
+                "id": "739",
+                "ratings": {
+                    "offense": 14.979137637839088,
+                    "defense": 0.7027806603895725,
+                    "overall": -4.230431849124804
+                }
+            },
+            {
+                "name": "Army West Point",
+                "id": "725",
+                "ratings": {
+                    "offense": 11.815650304864548,
+                    "defense": 3.0761767422361284,
+                    "overall": -5.020523100252788
+                }
+            },
+            {
+                "name": "Delaware",
+                "id": "180",
+                "ratings": {
+                    "offense": 11.554559078940175,
+                    "defense": 0.6215844981692443,
+                    "overall": -7.736206570244045
+                }
+            },
+            {
+                "name": "Brown",
+                "id": "80",
+                "ratings": {
+                    "offense": 15.669383072320345,
+                    "defense": -0.715183164850331,
+                    "overall": -4.95815023988345
+                }
+            },
+            {
+                "name": "Mt. St. Mary's",
+                "id": "450",
+                "ratings": {
+                    "offense": 9.54952131307063,
+                    "defense": -0.8473034418511284,
+                    "overall": -11.210132276133963
+                }
+            },
+            {
+                "name": "Binghamton",
+                "id": "62",
+                "ratings": {
+                    "offense": 10.13127034553923,
+                    "defense": 3.3279077940662347,
+                    "overall": -6.453172007748
+                }
+            },
+            {
+                "name": "High Point",
+                "id": "19651",
+                "ratings": {
+                    "offense": 9.696044657098586,
+                    "defense": 0.0329510843511659,
+                    "overall": -10.183354405903712
+                }
+            },
+            {
+                "name": "Siena",
+                "id": "639",
+                "ratings": {
+                    "offense": 10.67232310580808,
+                    "defense": -2.9482093562410903,
+                    "overall": -12.188236397786476
+                }
+            },
+            {
+                "name": "Cleveland St.",
+                "id": "148",
+                "ratings": {
+                    "offense": 8.096235976580777,
+                    "defense": -2.966900800457084,
+                    "overall": -14.783014971229772
+                }
+            },
+            {
+                "name": "Hartford",
+                "id": "272",
+                "ratings": {
+                    "offense": 11.868002410211053,
+                    "defense": -0.33687560734009586,
+                    "overall": -8.381223344482507
+                }
+            },
+            {
+                "name": "Hofstra",
+                "id": "283",
+                "ratings": {
+                    "offense": 12.900339374023785,
+                    "defense": 2.0500149786365403,
+                    "overall": -4.96199579469314
+                }
+            },
+            {
+                "name": "Virginia",
+                "id": "746",
+                "ratings": {
+                    "offense": 15.916496291100142,
+                    "defense": -1.4893326012886459,
+                    "overall": -5.485186457541969
+                }
+            },
+            {
+                "name": "Bellarmine",
+                "id": "52",
+                "ratings": {
+                    "offense": 9.391276547325964,
+                    "defense": -3.0851138121965036,
+                    "overall": -13.606187412224005
+                }
+            },
+            {
+                "name": "Maryland",
+                "id": "392",
+                "ratings": {
+                    "offense": 14.614383890677317,
+                    "defense": 5.2979662566761485,
+                    "overall": 0
+                }
+            },
+            {
+                "name": "Bryant",
+                "id": "81",
+                "ratings": {
+                    "offense": 10.629154194694644,
+                    "defense": 3.385773615715462,
+                    "overall": -5.897422336943357
+                }
+            },
+            {
+                "name": "North Carolina",
+                "id": "457",
+                "ratings": {
+                    "offense": 14.675239423621129,
+                    "defense": 2.382040010535933,
+                    "overall": -2.8550707131964046
+                }
+            },
+            {
+                "name": "NJIT",
+                "id": "471",
+                "ratings": {
+                    "offense": 6.430870693476017,
+                    "defense": -2.9944448514781716,
+                    "overall": -16.47592430535562
+                }
+            },
+            {
+                "id": "418",
+                "name": "Michigan",
+                "ratings": {
+                    "offense": 11.719058565298903,
+                    "defense": -0.008430709670516985,
+                    "overall": -8.201722291725078
+                }
+            },
+            {
+                "name": "Providence",
+                "id": "556",
+                "ratings": {
+                    "offense": 10.662302118949437,
+                    "defense": 3.7389017991445352,
+                    "overall": -5.5111462292594915
+                }
+            },
+            {
+                "name": "Furman",
+                "id": "244",
+                "ratings": {
+                    "offense": 10.619242195154118,
+                    "defense": 2.0736046706225486,
+                    "overall": -7.219503281576797
+                }
+            },
+            {
+                "name": "Colgate",
+                "id": "153",
+                "ratings": {
+                    "offense": 10.598983906720203,
+                    "defense": 0.5770657954633773,
+                    "overall": -8.736300445169883
+                }
+            },
+            {
+                "name": "Mercer",
+                "id": "406",
+                "ratings": {
+                    "offense": 8.764707236840527,
+                    "defense": -1.1881423861453957,
+                    "overall": -12.335785296658333
+                }
+            },
+            {
+                "name": "Manhattan",
+                "id": "381",
+                "ratings": {
+                    "offense": 8.420234640966552,
+                    "defense": -3.671359865488845,
+                    "overall": -15.163475371875759
+                }
+            },
+            {
+                "name": "St. John's (NY)",
+                "id": "603",
+                "ratings": {
+                    "offense": 8.601388058975042,
+                    "defense": -1.7850359910055718,
+                    "overall": -13.095998079383994
+                }
+            },
+            {
+                "name": "Vermont",
+                "id": "738",
+                "ratings": {
+                    "offense": 10.824968479413931,
+                    "defense": -0.3335346747909621,
+                    "overall": -9.420916342730496
+                }
+            },
+            {
+                "name": "Holy Cross",
+                "id": "285",
+                "ratings": {
+                    "offense": 10.090425485878345,
+                    "defense": 0.6186529506162358,
+                    "overall": -9.203271710858884
+                }
+            },
+            {
+                "name": "Navy",
+                "id": "726",
+                "ratings": {
+                    "offense": 10.87489843845637,
+                    "defense": 1.752461594611708,
+                    "overall": -7.284990114285387
+                }
+            },
+            {
+                "name": "Rutgers",
+                "id": "587",
+                "ratings": {
+                    "offense": 12.613481705890555,
+                    "defense": 2.8517800722124482,
+                    "overall": -4.447088369250462
+                }
+            },
+            {
+                "name": "Massachusetts",
+                "id": "400",
+                "ratings": {
+                    "offense": 11.00893090779065,
+                    "defense": 2.3992825634639647,
+                    "overall": -6.504136676098851
+                }
+            },
+            {
+                "name": "Bucknell",
+                "id": "83",
+                "ratings": {
+                    "offense": 10.952960450322015,
+                    "defense": 0.5453273225392481,
+                    "overall": -8.4140623744922
+                }
+            },
+            {
+                "name": "Boston U.",
+                "id": "68",
+                "ratings": {
+                    "offense": 12.241104655810148,
+                    "defense": 2.085840858750685,
+                    "overall": -5.585404632792631
+                }
+            },
+            {
+                "name": "Duke",
+                "id": "193",
+                "ratings": {
+                    "offense": 15.18951132742281,
+                    "defense": 3.793105458133836,
+                    "overall": -0.9297333617968171
+                }
+            },
+            {
+                "name": "Johns Hopkins",
+                "id": "322",
+                "ratings": {
+                    "offense": 14.080857229494361,
+                    "defense": 1.9831478173710517,
+                    "overall": -3.84834510048805
+                }
+            },
+            {
+                "name": "Penn St.",
+                "id": "539",
+                "ratings": {
+                    "offense": 14.913225450036347,
+                    "defense": 1.9137972401011731,
+                    "overall": -3.0853274572159464
+                }
+            },
+            {
+                "name": "Air Force",
+                "id": "721",
+                "ratings": {
+                    "offense": 11.909275785282942,
+                    "defense": 2.6862265739162283,
+                    "overall": -5.316847788154295
+                }
+            },
+            {
+                "name": "Notre Dame",
+                "id": "513",
+                "ratings": {
+                    "offense": 13.072262189231836,
+                    "defense": 3.54587234930017,
+                    "overall": -3.2942156088214603
+                }
+            },
+            {
+                "name": "Hobart and William Smith Colleges",
+                "id": "282",
+                "ratings": {
+                    "offense": 12.689063794594295,
+                    "defense": -0.08165776280943556,
+                    "overall": -7.304944115568604
+                }
+            },
+            {
+                "name": "Yale",
+                "id": "813",
+                "ratings": {
+                    "offense": 14.21776643712491,
+                    "defense": 2.402518632519189,
+                    "overall": -3.292065077709367
+                }
+            },
+            {
+                "name": "Penn",
+                "id": "540",
+                "ratings": {
+                    "offense": 12.063662132166694,
+                    "defense": 2.551490785815347,
+                    "overall": -5.297197229371424
+                }
+            },
+            {
+                "name": "Towson",
+                "id": "711",
+                "ratings": {
+                    "offense": 11.69453709323695,
+                    "defense": 4.717498978558407,
+                    "overall": -3.5003140755581086
+                }
+            },
+            {
+                "name": "Detroit Mercy",
+                "id": "184",
+                "ratings": {
+                    "offense": 8.473333266370856,
+                    "defense": -0.7308465804702378,
+                    "overall": -12.169863461452845
+                }
+            },
+            {
+                "name": "Quinnipiac",
+                "id": "562",
+                "ratings": {
+                    "offense": 8.375400147403273,
+                    "defense": -1.0551957101363036,
+                    "overall": -12.592145710086495
+                }
+            },
+            {
+                "name": "VMI",
+                "id": "741",
+                "ratings": {
+                    "offense": 7.495993086314877,
+                    "defense": -3.750597128544146,
+                    "overall": -16.166954189582732
+                }
+            },
+            {
+                "name": "UMBC",
+                "id": "391",
+                "ratings": {
+                    "offense": 9.049561143337794,
+                    "defense": 2.0384091429198516,
+                    "overall": -8.824379861095819
+                }
+            },
+            {
+                "name": "Hampton",
+                "id": "270",
+                "ratings": {
+                    "offense": 0.08327396306961202,
+                    "defense": -6.988122033945898,
+                    "overall": -26.817198218229752
+                }
+            },
+            {
+                "name": "Loyola Maryland",
+                "id": "369",
+                "ratings": {
+                    "offense": 13.961402732777,
+                    "defense": 3.507908858402347,
+                    "overall": -2.443038556174116
+                }
+            },
+            {
+                "name": "Saint Joseph's",
+                "id": "606",
+                "ratings": {
+                    "offense": 9.688776432730453,
+                    "defense": 1.0402308975352548,
+                    "overall": -9.183342817087757
+                }
+            },
+            {
+                "name": "Denver",
+                "id": "183",
+                "ratings": {
+                    "offense": 15.596232137460401,
+                    "defense": 3.767155515951874,
+                    "overall": -0.5489624939411897
+                }
+            },
+            {
+                "name": "Albany (NY)",
+                "id": "14",
+                "ratings": {
+                    "offense": 16.889723004995208,
+                    "defense": 2.1333198932784687,
+                    "overall": -0.8893072490797884
+                }
+            },
+            {
+                "name": "Richmond",
+                "id": "575",
+                "ratings": {
+                    "offense": 11.099485930185818,
+                    "defense": 4.808153555280965,
+                    "overall": -4.004710661886682
+                }
+            },
+            {
+                "name": "Sacred Heart",
+                "id": "590",
+                "ratings": {
+                    "offense": 11.503611263587688,
+                    "defense": 0.07211291036186665,
+                    "overall": -8.33662597340391
+                }
+            },
+            {
+                "name": "Fairfield",
+                "id": "220",
+                "ratings": {
+                    "offense": 9.932662113813004,
+                    "defense": 1.4832160548524913,
+                    "overall": -8.49647197868797
+                }
+            }
+        ]
     },
     "headers": {
-        "Expires": "Wed, 19 Apr 2017 11:45:11 GMT",
-        "Last-Modified": "Tue, 18 Apr 2017 11:45:11 GMT"
+        "Last-Modified": "Wed, 14 Jun 2017 04:15:04 GMT",
+        "Expires": "Thu, 15 Jun 2017 04:15:04 GMT"
     }
 }

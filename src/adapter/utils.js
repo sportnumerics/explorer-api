@@ -3,6 +3,14 @@
 let config = require('config');
 let moment = require('moment');
 
+function ratingsTimestamp(ratings) {
+  return new Date(ratings.timestamp);
+}
+
+function defaultDate() {
+  return new Date();
+}
+
 function lastModified(meta) {
   return meta.lastModified.toUTCString();
 }
@@ -22,5 +30,7 @@ function headers(meta) {
 module.exports = {
   lastModified,
   expires,
-  headers
+  headers,
+  ratingsTimestamp,
+  defaultDate
 }
