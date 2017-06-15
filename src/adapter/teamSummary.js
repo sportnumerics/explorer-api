@@ -9,7 +9,10 @@ let recordSummary = require('./recordSummary');
 function teamSummary({ teamRes, opponentsRes }) {
   let teamObj = teamRes[0];
   let games = teamObj.schedule;
-  let teamInfo = teamObj.team;
+  let teamInfo = {
+    id: teamObj.id,
+    name: teamObj.name
+  };
   let ratings = teamObj.ratings;
   let teamRatings = { ratings: ratingsSummary(ratings) };
   let teamRecord = { record: recordSummary(games) };
@@ -21,7 +24,7 @@ function teamSummary({ teamRes, opponentsRes }) {
     });
   });
   let body = Object.assign({}, team, { schedule });
-  
+
   let lastModified = utils.ratingsTimestamp(ratings);
   let headers = utils.headers({ lastModified });
   return { body, headers }

@@ -2,11 +2,8 @@
 
 module.exports = [
     {
+        "name": "Duke",
         "id": "193",
-        "team": {
-            "name": "Duke",
-            "id": "193",
-        },
         "ratings": {
             "offense": 15.18951132742281,
             "defense": 3.793105458133836,
@@ -15,11 +12,8 @@ module.exports = [
         "schedule": "not important for testing - would normally be here"
     },
     {
+        "name": "High Point",
         "id": "19651",
-        "team": {
-            "name": "High Point",
-            "id": "19651",
-        },
         "ratings": {
             "offense": 9.696044657098586,
             "defense": 0.0329510843511659,

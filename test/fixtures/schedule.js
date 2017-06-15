@@ -1,11 +1,9 @@
 'use strict';
 
 module.exports = [
-        {
-        "team": {
-            "name": "Air Force",
-            "id": "721",
-        },
+    {
+        "name": "Air Force",
+        "id": "721",
         "ratings": {
             "offense": 11.909275785282942,
             "defense": 2.6862265739162283,

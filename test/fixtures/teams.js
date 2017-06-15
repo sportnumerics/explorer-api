@@ -3,10 +3,6 @@
 module.exports = [
   {
     "div": "1",
-    "team": {
-      "name": "Wagner",
-      "id": "748"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -226,14 +222,11 @@ module.exports = [
       "defense": -0.7990669209161307,
       "overall": -13.808715269581008,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Wagner"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Marquette",
-      "id": "387"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -468,14 +461,11 @@ module.exports = [
       "defense": 3.203442343518334,
       "overall": -4.777361080731309,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Marquette"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Cornell",
-      "id": "167"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -668,14 +658,11 @@ module.exports = [
       "defense": -0.4461963646779996,
       "overall": -7.434845948548421,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Cornell"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Harvard",
-      "id": "275"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -867,14 +854,11 @@ module.exports = [
       "defense": 1.5364723074518323,
       "overall": -6.611839660460166,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Harvard"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Dartmouth",
-      "id": "172"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -1066,14 +1050,11 @@ module.exports = [
       "defense": -0.6595648091058045,
       "overall": -12.963624872997944,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Dartmouth"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Ohio St.",
-      "id": "518"
-    },
     "schedule": [
       {
         "date": "2017-02-05T00:00:00.000Z",
@@ -1381,14 +1362,11 @@ module.exports = [
       "defense": 3.8460099876039333,
       "overall": -2.3150304420898777,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Ohio St."
   },
   {
     "div": "1",
-    "team": {
-      "name": "Georgetown",
-      "id": "251"
-    },
     "schedule": [
       {
         "date": "2017-02-14T00:00:00.000Z",
@@ -1595,14 +1573,11 @@ module.exports = [
       "defense": 0.7573312476515379,
       "overall": -7.003044155183517,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Georgetown"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Princeton",
-      "id": "554"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -1823,14 +1798,11 @@ module.exports = [
       "defense": 0.14064468784823186,
       "overall": -4.397226485764529,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Princeton"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Drexel",
-      "id": "191"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -2036,14 +2008,11 @@ module.exports = [
       "defense": 0.6691846503485179,
       "overall": -7.556309817008689,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Drexel"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Marist",
-      "id": "386"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -2277,14 +2246,11 @@ module.exports = [
       "defense": 2.9002465012307117,
       "overall": -8.796060599809506,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Marist"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Monmouth",
-      "id": "439"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -2547,14 +2513,11 @@ module.exports = [
       "defense": 2.0479589058900776,
       "overall": -8.470221785059001,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Monmouth"
   },
   {
     "div": "1",
-    "team": {
-      "name": "UMass Lowell",
-      "id": "368"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -2788,14 +2751,11 @@ module.exports = [
       "defense": -1.1585720908641013,
       "overall": -10.922442149070493,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "UMass Lowell"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Robert Morris",
-      "id": "579"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -3030,14 +2990,11 @@ module.exports = [
       "defense": 0.3881176119485112,
       "overall": -8.759815625984391,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Robert Morris"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Syracuse",
-      "id": "688"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -3273,14 +3230,11 @@ module.exports = [
       "defense": 2.6229882922635914,
       "overall": -3.641039609683066,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Syracuse"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Jacksonville",
-      "id": "316"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -3487,14 +3441,11 @@ module.exports = [
       "defense": -1.500560048042191,
       "overall": -11.13204690597196,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Jacksonville"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Lehigh",
-      "id": "352"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -3700,14 +3651,11 @@ module.exports = [
       "defense": 1.4885797879408942,
       "overall": -7.940448542717659,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Lehigh"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Stony Brook",
-      "id": "683"
-    },
     "schedule": [
       {
         "date": "2017-02-14T00:00:00.000Z",
@@ -3913,14 +3861,11 @@ module.exports = [
       "defense": 0.5283623247114129,
       "overall": -7.819593145355499,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Stony Brook"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Lafayette",
-      "id": "342"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -4126,14 +4071,11 @@ module.exports = [
       "defense": -2.064254843906538,
       "overall": -13.598172685751402,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Lafayette"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Canisius",
-      "id": "116"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -4350,14 +4292,11 @@ module.exports = [
       "defense": -0.47741687792473797,
       "overall": -9.90703754274282,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Canisius"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Villanova",
-      "id": "739"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -4577,14 +4516,11 @@ module.exports = [
       "defense": 0.7027806603895725,
       "overall": -4.230431849124804,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Villanova"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Army West Point",
-      "id": "725"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -4819,14 +4755,11 @@ module.exports = [
       "defense": 3.0761767422361284,
       "overall": -5.020523100252788,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Army West Point"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Delaware",
-      "id": "180"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -5046,14 +4979,11 @@ module.exports = [
       "defense": 0.6215844981692443,
       "overall": -7.736206570244045,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Delaware"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Brown",
-      "id": "80"
-    },
     "schedule": [
       {
         "date": "2017-02-19T00:00:00.000Z",
@@ -5288,14 +5218,11 @@ module.exports = [
       "defense": -0.715183164850331,
       "overall": -4.95815023988345,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Brown"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Mt. St. Mary's",
-      "id": "450"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -5501,14 +5428,11 @@ module.exports = [
       "defense": -0.8473034418511284,
       "overall": -11.210132276133963,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Mt. St. Mary's"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Binghamton",
-      "id": "62"
-    },
     "schedule": [
       {
         "date": "2017-02-17T00:00:00.000Z",
@@ -5743,14 +5667,11 @@ module.exports = [
       "defense": 3.3279077940662347,
       "overall": -6.453172007748,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Binghamton"
   },
   {
     "div": "1",
-    "team": {
-      "name": "High Point",
-      "id": "19651"
-    },
     "schedule": [
       {
         "date": "2017-02-10T00:00:00.000Z",
@@ -5956,14 +5877,11 @@ module.exports = [
       "defense": 0.0329510843511659,
       "overall": -10.183354405903712,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "High Point"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Siena",
-      "id": "639"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -6169,14 +6087,11 @@ module.exports = [
       "defense": -2.9482093562410903,
       "overall": -12.188236397786476,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Siena"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Cleveland St.",
-      "id": "148"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -6387,14 +6302,11 @@ module.exports = [
       "defense": -2.966900800457084,
       "overall": -14.783014971229772,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Cleveland St."
   },
   {
     "div": "1",
-    "team": {
-      "name": "Hartford",
-      "id": "272"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -6600,14 +6512,11 @@ module.exports = [
       "defense": -0.33687560734009586,
       "overall": -8.381223344482507,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Hartford"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Hofstra",
-      "id": "283"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -6814,14 +6723,11 @@ module.exports = [
       "defense": 2.0500149786365403,
       "overall": -4.96199579469314,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Hofstra"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Virginia",
-      "id": "746"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -7043,14 +6949,11 @@ module.exports = [
       "defense": -1.4893326012886459,
       "overall": -5.485186457541969,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Virginia"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Bellarmine",
-      "id": "52"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -7244,14 +7147,11 @@ module.exports = [
       "defense": -3.0851138121965036,
       "overall": -13.606187412224005,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Bellarmine"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Maryland",
-      "id": "392"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -7531,14 +7431,11 @@ module.exports = [
       "defense": 5.2979662566761485,
       "overall": 0,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Maryland"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Bryant",
-      "id": "81"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -7815,14 +7712,11 @@ module.exports = [
       "defense": 3.385773615715462,
       "overall": -5.897422336943357,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Bryant"
   },
   {
     "div": "1",
-    "team": {
-      "name": "North Carolina",
-      "id": "457"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -8059,14 +7953,11 @@ module.exports = [
       "defense": 2.382040010535933,
       "overall": -2.8550707131964046,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "North Carolina"
   },
   {
     "div": "1",
-    "team": {
-      "name": "NJIT",
-      "id": "471"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -8286,14 +8177,11 @@ module.exports = [
       "defense": -2.9944448514781716,
       "overall": -16.47592430535562,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "NJIT"
   },
   {
     "div": "1",
-    "team": {
-      "id": "418",
-      "name": "Michigan"
-    },
     "schedule": [
       {
         "result": {
@@ -8499,14 +8387,11 @@ module.exports = [
       "defense": -0.008430709670516985,
       "overall": -8.201722291725078,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Michigan"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Providence",
-      "id": "556"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -8754,14 +8639,11 @@ module.exports = [
       "defense": 3.7389017991445352,
       "overall": -5.5111462292594915,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Providence"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Furman",
-      "id": "244"
-    },
     "schedule": [
       {
         "date": "2017-02-02T00:00:00.000Z",
@@ -8982,14 +8864,11 @@ module.exports = [
       "defense": 2.0736046706225486,
       "overall": -7.219503281576797,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Furman"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Colgate",
-      "id": "153"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -9195,14 +9074,11 @@ module.exports = [
       "defense": 0.5770657954633773,
       "overall": -8.736300445169883,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Colgate"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Mercer",
-      "id": "406"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -9395,14 +9271,11 @@ module.exports = [
       "defense": -1.1881423861453957,
       "overall": -12.335785296658333,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Mercer"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Manhattan",
-      "id": "381"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -9608,14 +9481,11 @@ module.exports = [
       "defense": -3.671359865488845,
       "overall": -15.163475371875759,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Manhattan"
   },
   {
     "div": "1",
-    "team": {
-      "name": "St. John's (NY)",
-      "id": "603"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -9821,14 +9691,11 @@ module.exports = [
       "defense": -1.7850359910055718,
       "overall": -13.095998079383994,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "St. John's (NY)"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Vermont",
-      "id": "738"
-    },
     "schedule": [
       {
         "date": "2017-02-02T00:00:00.000Z",
@@ -10020,14 +9887,11 @@ module.exports = [
       "defense": -0.3335346747909621,
       "overall": -9.420916342730496,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Vermont"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Holy Cross",
-      "id": "285"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -10247,14 +10111,11 @@ module.exports = [
       "defense": 0.6186529506162358,
       "overall": -9.203271710858884,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Holy Cross"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Navy",
-      "id": "726"
-    },
     "schedule": [
       {
         "date": "2017-02-07T00:00:00.000Z",
@@ -10460,14 +10321,11 @@ module.exports = [
       "defense": 1.752461594611708,
       "overall": -7.284990114285387,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Navy"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Rutgers",
-      "id": "587"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -10673,14 +10531,11 @@ module.exports = [
       "defense": 2.8517800722124482,
       "overall": -4.447088369250462,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Rutgers"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Massachusetts",
-      "id": "400"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -10901,14 +10756,11 @@ module.exports = [
       "defense": 2.3992825634639647,
       "overall": -6.504136676098851,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Massachusetts"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Bucknell",
-      "id": "83"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -11100,14 +10952,11 @@ module.exports = [
       "defense": 0.5453273225392481,
       "overall": -8.4140623744922,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Bucknell"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Boston U.",
-      "id": "68"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -11357,14 +11206,11 @@ module.exports = [
       "defense": 2.085840858750685,
       "overall": -5.585404632792631,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Boston U."
   },
   {
     "div": "1",
-    "team": {
-      "name": "Duke",
-      "id": "193"
-    },
     "schedule": [
       {
         "date": "2017-02-05T00:00:00.000Z",
@@ -11628,14 +11474,11 @@ module.exports = [
       "defense": 3.793105458133836,
       "overall": -0.9297333617968171,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Duke"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Johns Hopkins",
-      "id": "322"
-    },
     "schedule": [
       {
         "date": "2017-02-07T00:00:00.000Z",
@@ -11855,14 +11698,11 @@ module.exports = [
       "defense": 1.9831478173710517,
       "overall": -3.84834510048805,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Johns Hopkins"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Penn St.",
-      "id": "539"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -12097,14 +11937,11 @@ module.exports = [
       "defense": 1.9137972401011731,
       "overall": -3.0853274572159464,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Penn St."
   },
   {
     "div": "1",
-    "team": {
-      "name": "Air Force",
-      "id": "721"
-    },
     "schedule": [
       {
         "date": "2017-02-05T00:00:00.000Z",
@@ -12369,14 +12206,11 @@ module.exports = [
       "defense": 2.6862265739162283,
       "overall": -5.316847788154295,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Air Force"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Notre Dame",
-      "id": "513"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -12599,14 +12433,11 @@ module.exports = [
       "defense": 3.54587234930017,
       "overall": -3.2942156088214603,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Notre Dame"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Hobart and William Smith Colleges",
-      "id": "282"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -12840,14 +12671,11 @@ module.exports = [
       "defense": -0.08165776280943556,
       "overall": -7.304944115568604,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Hobart and William Smith Colleges"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Yale",
-      "id": "813"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -13081,14 +12909,11 @@ module.exports = [
       "defense": 2.402518632519189,
       "overall": -3.292065077709367,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Yale"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Penn",
-      "id": "540"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -13281,14 +13106,11 @@ module.exports = [
       "defense": 2.551490785815347,
       "overall": -5.297197229371424,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Penn"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Towson",
-      "id": "711"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -13538,14 +13360,11 @@ module.exports = [
       "defense": 4.717498978558407,
       "overall": -3.5003140755581086,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Towson"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Detroit Mercy",
-      "id": "184"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -13782,14 +13601,11 @@ module.exports = [
       "defense": -0.7308465804702378,
       "overall": -12.169863461452845,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Detroit Mercy"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Quinnipiac",
-      "id": "562"
-    },
     "schedule": [
       {
         "date": "2017-02-19T00:00:00.000Z",
@@ -13953,14 +13769,11 @@ module.exports = [
       "defense": -1.0551957101363036,
       "overall": -12.592145710086495,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Quinnipiac"
   },
   {
     "div": "1",
-    "team": {
-      "name": "VMI",
-      "id": "741"
-    },
     "schedule": [
       {
         "date": "2017-02-20T00:00:00.000Z",
@@ -14166,14 +13979,11 @@ module.exports = [
       "defense": -3.750597128544146,
       "overall": -16.166954189582732,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "VMI"
   },
   {
     "div": "1",
-    "team": {
-      "name": "UMBC",
-      "id": "391"
-    },
     "schedule": [
       {
         "date": "2017-02-04T00:00:00.000Z",
@@ -14381,14 +14191,11 @@ module.exports = [
       "defense": 2.0384091429198516,
       "overall": -8.824379861095819,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "UMBC"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Hampton",
-      "id": "270"
-    },
     "schedule": [
       {
         "date": "2017-02-17T00:00:00.000Z",
@@ -14515,14 +14322,11 @@ module.exports = [
       "defense": -6.988122033945898,
       "overall": -26.817198218229752,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Hampton"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Loyola Maryland",
-      "id": "369"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -14756,14 +14560,11 @@ module.exports = [
       "defense": 3.507908858402347,
       "overall": -2.443038556174116,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Loyola Maryland"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Saint Joseph's",
-      "id": "606"
-    },
     "schedule": [
       {
         "date": "2017-02-14T00:00:00.000Z",
@@ -14969,14 +14770,11 @@ module.exports = [
       "defense": 1.0402308975352548,
       "overall": -9.183342817087757,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Saint Joseph's"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Denver",
-      "id": "183"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -15227,14 +15025,11 @@ module.exports = [
       "defense": 3.767155515951874,
       "overall": -0.5489624939411897,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Denver"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Albany (NY)",
-      "id": "14"
-    },
     "schedule": [
       {
         "date": "2017-02-18T00:00:00.000Z",
@@ -15497,14 +15292,11 @@ module.exports = [
       "defense": 2.1333198932784687,
       "overall": -0.8893072490797884,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Albany (NY)"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Richmond",
-      "id": "575"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -15738,14 +15530,11 @@ module.exports = [
       "defense": 4.808153555280965,
       "overall": -4.004710661886682,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Richmond"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Sacred Heart",
-      "id": "590"
-    },
     "schedule": [
       {
         "date": "2017-02-14T00:00:00.000Z",
@@ -15966,14 +15755,11 @@ module.exports = [
       "defense": 0.07211291036186665,
       "overall": -8.33662597340391,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Sacred Heart"
   },
   {
     "div": "1",
-    "team": {
-      "name": "Fairfield",
-      "id": "220"
-    },
     "schedule": [
       {
         "date": "2017-02-11T00:00:00.000Z",
@@ -16179,6 +15965,7 @@ module.exports = [
       "defense": 1.4832160548524913,
       "overall": -8.49647197868797,
       "timestamp": "2017-06-14T04:15:04.325158"
-    }
+    },
+    "name": "Fairfield"
   }
 ]
