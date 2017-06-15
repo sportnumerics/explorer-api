@@ -4,6 +4,8 @@ module.exports = [
     {
         "name": "Air Force",
         "id": "721",
+        "div": "1",
+        "season": "2016",
         "ratings": {
             "offense": 11.909275785282942,
             "defense": 2.6862265739162283,

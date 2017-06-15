@@ -1,5 +1,6 @@
 {
     "body": {
+        "div": "1",
         "id": "721",
         "name": "Air Force",
         "ratings": {
@@ -7,6 +8,7 @@
             "offense": 11.909275785282942,
             "overall": -5.316847788154295
         },
+        "season": "2016",
         "record": {
             "wins": 1,
             "losses": 0,

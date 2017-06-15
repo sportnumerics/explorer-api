@@ -9,10 +9,7 @@ let recordSummary = require('./recordSummary');
 function teamSummary({ teamRes, opponentsRes }) {
   let teamObj = teamRes[0];
   let games = teamObj.schedule;
-  let teamInfo = {
-    id: teamObj.id,
-    name: teamObj.name
-  };
+  let teamInfo = _.pick(teamObj, ['id', 'name', 'season', 'div']);
   let ratings = teamObj.ratings;
   let teamRatings = { ratings: ratingsSummary(ratings) };
   let teamRecord = { record: recordSummary(games) };
