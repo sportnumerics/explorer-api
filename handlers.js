@@ -39,7 +39,7 @@ function createErrorResponse(error) {
 }
 
 function createErrorBody(error) {
-  let prod = process.env.NODE_ENV !== 'prod';
+  let prod = /^prod/.test(process.env.NODE_ENV);
   let message = error.message;
   let stack = prod ? error.stack : undefined;
   return JSON.stringify({ message, stack })
