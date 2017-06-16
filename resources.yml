@@ -1,16 +1,13 @@
 Mappings:
   StageMapping:
     dev:
-      aliases:
-        - explorer-api.dev.sportnumerics.com
+      domain: explorer-api.dev.sportnumerics.com
       certificate: arn:aws:acm:us-east-1:265978616089:certificate/8a8d8c31-20b3-49c4-8b58-13b259064cc6
     prodgreen:
-      aliases:
-        - explorer-api-green.sportnumerics.com
+      domain: explorer-api-green.sportnumerics.com
       certificate: arn:aws:acm:us-east-1:265978616089:certificate/7140c26c-5b35-4f21-b16d-695bf5a659e6
     prodblue:
-      aliases:
-        - explorer-api-blue.sportnumerics.com
+      domain: explorer-api-blue.sportnumerics.com
       certificate: arn:aws:acm:us-east-1:265978616089:certificate/7140c26c-5b35-4f21-b16d-695bf5a659e6
 Resources:
   CloudfrontDistribution:
@@ -18,10 +15,10 @@ Resources:
     Properties:
       DistributionConfig:
         Aliases:
-          Fn::FindInMap:
+          - Fn::FindInMap:
             - StageMapping
             - ${opt:stage}
-            - aliases
+            - domain
         DefaultCacheBehavior:
           ForwardedValues:
             QueryString: false
@@ -53,3 +50,19 @@ Resources:
               - ${opt:stage}
               - certificate
           SslSupportMethod: sni-only
+  Domain:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      AliasTarget:
+        DNSName:
+          Fn::GetAtt:
+            - CloudfrontDistribution
+            - DomainName
+        HostedZoneId: Z2FDTNDATAQYW2
+      HostedZoneName: sportnumerics.com.
+      Name:
+        Fn::FindInMap:
+          - StageMapping
+          - Ref: StageParameter
+          - domain
+      Type: A
