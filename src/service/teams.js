@@ -8,7 +8,7 @@ const TABLE = process.env.TEAMS_TABLE_NAME;
 function getTeamsByYearAndDiv(year, div) {
   return utils.queryDb({
     TableName: TABLE,
-    IndexName: 'schedule',
+    IndexName: 'by_div',
     KeyConditionExpression: '#year = :year and div = :div',
     ExpressionAttributeValues: {
       ':year': year,
