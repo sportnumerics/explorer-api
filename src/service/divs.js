@@ -7,9 +7,12 @@ const TABLE = process.env.DIVS_TABLE_NAME
 function getDivsByYear(year) {
   return utils.queryDb({
     TableName: TABLE,
-    KeyConditionExpression: 'season = :season',
+    KeyConditionExpression: '#year = :year',
     ExpressionAttributeValues: {
-      ':season': year
+      ':year': year
+    },
+    ExpressionAttributeNames: {
+      '#year': 'year'
     }
   }).then(data => {
     return data.Items[0];

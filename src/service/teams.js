@@ -9,10 +9,13 @@ function getTeamsByYearAndDiv(year, div) {
   return utils.queryDb({
     TableName: TABLE,
     IndexName: 'schedule',
-    KeyConditionExpression: 'season = :season and div = :div',
+    KeyConditionExpression: '#year = :year and div = :div',
     ExpressionAttributeValues: {
-      ':season': year,
+      ':year': year,
       ':div': div
+    },
+    ExpressionAttributeNames: {
+      '#year': 'year'
     }
   }).then(data => {
     return data.Items;

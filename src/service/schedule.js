@@ -5,11 +5,14 @@ let _ = require('lodash');
 
 const TABLE = process.env.TEAMS_TABLE_NAME;
 
-function getSchedulesByYearAndTeamIds(season, teamIds) {
+function getSchedulesByYearAndTeamIds(year, teamIds) {
   return utils.batchQueryDb({
     RequestItems: {
       [TABLE]: {
-        Keys: _(teamIds).uniq().map(id => ({ id, season })).value()
+        Keys: _(teamIds).uniq().map(id => ({ id, '#year': year })).value(),
+        ExpressionAttributeNames: {
+          '#year': 'year'
+        }
       }
     }
   }).then(data => {
