@@ -15,7 +15,7 @@ function getDivsByYear(year) {
       '#year': 'year'
     }
   }).then(data => {
-    return data.Items[0];
+    return data.Items;
   });
 }
 
