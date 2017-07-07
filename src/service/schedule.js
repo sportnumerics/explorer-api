@@ -9,10 +9,7 @@ function getSchedulesByYearAndTeamIds(year, teamIds) {
   return utils.batchQueryDb({
     RequestItems: {
       [TABLE]: {
-        Keys: _(teamIds).uniq().map(id => ({ id, '#year': year })).value(),
-        ExpressionAttributeNames: {
-          '#year': 'year'
-        }
+        Keys: _(teamIds).uniq().map(id => ({ id, year })).value()
       }
     }
   }).then(data => {
