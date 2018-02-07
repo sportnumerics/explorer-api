@@ -4,7 +4,11 @@ let config = require('config');
 let moment = require('moment');
 
 function ratingsTimestamp(ratings) {
-  return new Date(ratings.timestamp);
+  if (ratings && ratings.timestamp) {
+    return new Date(ratings.timestamp);
+  } else {
+    return defaultDate();
+  }
 }
 
 function defaultDate() {

@@ -16,7 +16,12 @@ function teamsSummary(teamsRes) {
 }
 
 function getFirstTeamRatings(teams) {
-  return _(teams).filter('ratings').head().ratings;
+  const firstTeam = _(teams).filter('ratings').head();
+  if (firstTeam) {
+    return firstTeam.ratings;
+  } else {
+    return {};
+  }
 }
 
 module.exports = teamsSummary;

@@ -15,7 +15,11 @@ function teamSummary({ teamRes, opponentsRes }) {
   let teamRecord = { record: recordSummary(games) };
   let team = Object.assign({}, teamInfo, teamRatings, teamRecord);
   let schedule = games.map(function(game) {
-    const opponentRatings = _.find(opponentsRes, { id: game.opponent.id }).ratings;
+    const opponent = _.find(opponentsRes, { id: game.opponent.id });
+    if (!opponent) {
+      return game;
+    }
+    const opponentRatings = opponent.ratings;
     return Object.assign({}, game, {
       predictions: predictGame(ratings, opponentRatings)
     });
