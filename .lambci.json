@@ -1,5 +1,5 @@
 {
-  "cmd": "curl -o- -L https://yarnpkg.com/install.sh | bash && yarn && yarn test && ./deploy.sh",
+  "cmd": "touch $HOME/.profile && curl -o- -L https://yarnpkg.com/install.sh | bash && yarn && yarn test && ./deploy.sh",
   "branches": {
     "master": true,
     "dev": true
