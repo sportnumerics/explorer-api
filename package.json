@@ -21,6 +21,7 @@
     "moment": "^2.17.1"
   },
   "devDependencies": {
+    "explorer-cdn": "https://github.com/sportnumerics/explorer-cdn#1.0.1",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
     "express": "^4.15.2",
