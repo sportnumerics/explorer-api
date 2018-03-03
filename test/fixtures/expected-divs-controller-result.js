@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = ({lastModified, expires}) => ({
+module.exports = ({lastModified, expires} = {}) => ({
   "body": {
     "divisions": [
       {

@@ -10,7 +10,7 @@ module.exports = [
             "offense": 11.909275785282942,
             "defense": 2.6862265739162283,
             "overall": -5.316847788154295,
-            "timestamp": "2017-06-14T04:15:04.325158"
+            "timestamp": "2017-06-14T04:15:04.325158Z"
         },
         "schedule": [{
             "location": {
