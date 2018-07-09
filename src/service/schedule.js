@@ -1,21 +1,40 @@
 'use strict';
 
-let utils = require('./utils');
-let _ = require('lodash');
+const utils = require('./utils');
+const _ = require('lodash');
+const config = require('config');
 
-const TABLE = process.env.TEAMS_TABLE_NAME;
+async function getSchedulesByYearAndTeamIds(year, teamIds) {
+  return await Promise.all(teamIds.map(async id => {
+    try {
+      const object = await utils.getObject({
+        Bucket: process.env.TEAMS_BUCKET_NAME,
+        Key: `${year}/teams/${id}.json`
+      });
 
-function getSchedulesByYearAndTeamIds(year, teamIds) {
-  return utils.batchQueryDb({
-    RequestItems: {
-      [TABLE]: {
-        Keys: _(teamIds).uniq().map(id => ({ id, year })).value()
-      }
+      return JSON.parse(object.Body);
+    } catch (e) {
+      console.log(`Error while getting team ${id}`, e);
+      return null;
     }
-  }).then(data => {
-    return data.Responses[TABLE];
-  });
+  }));
 };
+
+async function getSchedulesByYearAndTeamIdsLocal(year, teamIds) {
+  const SCHEDULES_DIR = `${config.predictSrcDir}/teams`;
+
+  const fs = require('fs').promises;
+  return await Promise.all(teamIds.map(async id => {
+    const fileName = `${SCHEDULES_DIR}/${id}.json`;
+    console.log(`Getting ${fileName}`);
+    try {
+      const schedule = await fs.readFile(fileName);
+      return JSON.parse(schedule);
+    } catch {
+      return null;
+    }
+  }));
+}
 
 module.exports = {
   getSchedulesByYearAndTeamIds

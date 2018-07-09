@@ -1,22 +1,26 @@
 'use strict';
 
-let utils = require('./utils');
+const utils = require('./utils');
+const config = require('config');
 
-const TABLE = process.env.DIVS_TABLE_NAME
-
-function getDivsByYear(year) {
-  return utils.queryDb({
-    TableName: TABLE,
-    KeyConditionExpression: '#year = :year',
-    ExpressionAttributeValues: {
-      ':year': year
-    },
-    ExpressionAttributeNames: {
-      '#year': 'year'
-    }
-  }).then(data => {
-    return data.Items;
+async function getDivsByYear(year) {
+  const object = await utils.getObject({
+    Bucket: process.env.DIVS_BUCKET_NAME,
+    Key: `${year}/divisions.json`
   });
+
+  return JSON.parse(object.Body);
+}
+
+async function getDivsByYearLocal(year) {
+  const DIVS_FILE = `${config.predictSrcDir}/divisions.json`;
+
+  const fs = require('fs').promises;
+
+  console.log(`Getting ${DIVS_FILE}`);
+  const divs = await fs.readFile(DIVS_FILE);
+
+  return JSON.parse(divs);
 }
 
 module.exports = {

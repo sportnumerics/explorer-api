@@ -1,26 +1,24 @@
 'use strict';
 
 let utils = require('./utils');
-let fs = require('fs');
+const config = require('config')
 
-const TABLE = process.env.TEAMS_TABLE_NAME;
-
-function getTeamsByYearAndDiv(year, div) {
-  return utils.queryDb({
-    TableName: TABLE,
-    IndexName: 'by_div',
-    KeyConditionExpression: '#year = :year and div = :div',
-    ExpressionAttributeValues: {
-      ':year': year,
-      ':div': div
-    },
-    ExpressionAttributeNames: {
-      '#year': 'year'
-    }
-  }).then(data => {
-    return data.Items;
+async function getTeamsByYearAndDiv(year, div) {
+  const object = await utils.getObject({
+    Bucket: process.env.TEAMS_BUCKET_NAME,
+    Key: `${year}/divs/${div}`
   });
+
+  return JSON.parse(object.Body);
 };
+
+async function getTeamsByYearAndDivLocal(year, div) {
+  const fs = require('fs').promises;
+  const fileName = `${config.predictSrcDir}/divs/${div}.json`;
+  console.log(`Getting ${fileName}`);
+  const teams = await fs.readFile(fileName);
+return JSON.parse(teams);
+}
 
 module.exports = {
   getTeamsByYearAndDiv

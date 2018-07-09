@@ -11,7 +11,8 @@ function handleify(f) {
     f(Object.assign({}, event.pathParameters))
     .then(createSuccessResponse)
     .catch(createErrorResponse)
-    .asCallback(callback);
+    .then((result) => callback(null, result))
+    .catch((err) => callback(err));
   }
 }
 

@@ -16,7 +16,7 @@ describe('teams controller', () => {
 
     teamsMock.expects('getTeamsByYearAndDiv')
       .withArgs(year, div)
-      .returns(Promise.resolve(fixtures.teamsJson));
+      .returns(Promise.resolve(fixtures.divJson));
 
     return controller({ year, div })
       .then((result) => {

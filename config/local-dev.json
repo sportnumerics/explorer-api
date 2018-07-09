@@ -1,9 +1,10 @@
 {
   "corsOrigin": "*",
-  "mocks": {
+  "mocks-disabled": {
     "/years/:year": "./test/fixtures/expected-divs-controller-result",
     "/years/:year/divs/:div": "./test/fixtures/expected-teams-controller-result",
     "/years/:year/teams/:team": "./test/fixtures/expected-schedule-controller-result"
   },
-  "allowedOrigins": "*"
+  "allowedOrigins": "*",
+  "predictSrcDir": "../predict/output/2018"
 }

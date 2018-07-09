@@ -5,11 +5,11 @@ let utils = require('./utils');
 let moment = require('moment');
 let _ = require('lodash');
 
-function teamsSummary(teamsRes) {
-  const teams = _.map(teamsRes, ({ id, name, ratings }) => (
+function teamsSummary(divRes) {
+  const teams = _.map(divRes.teams, ({ id, name, ratings }) => (
     { id, name, ratings: ratingsSummary(ratings) }
   ));
-  const lastModified = utils.ratingsTimestamp(getFirstTeamRatings(teamsRes));
+  const lastModified = utils.ratingsTimestamp(getFirstTeamRatings(divRes.teams));
   let body = { teams };
   let headers = utils.headers({ lastModified });
   return { body, headers };

@@ -4,17 +4,12 @@ let AWS = require('aws-sdk');
 let _ = require('lodash');
 
 AWS.config.update({region: process.env['AWS_DEFAULT_REGION']});
-const db = Promise.promisifyAll(new AWS.DynamoDB.DocumentClient());
+const s3 = Promise.promisifyAll(new AWS.S3());
 
-function queryDb(params) {
-  return db.queryAsync(params);
-}
-
-function batchQueryDb(params) {
-  return db.batchGetAsync(params);
+function getObject(params) {
+  return s3.getObjectAsync(params);
 }
 
 module.exports = {
-  queryDb,
-  batchQueryDb
+  getObject
 };
