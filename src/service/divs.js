@@ -5,7 +5,7 @@ const config = require('config');
 
 async function getDivsByYear(year) {
   const object = await utils.getObject({
-    Bucket: process.env.DIVS_BUCKET_NAME,
+    Bucket: process.env.PREDICT_BUCKET_NAME,
     Key: `${year}/divisions.json`
   });
 

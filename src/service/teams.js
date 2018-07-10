@@ -5,7 +5,7 @@ const config = require('config')
 
 async function getTeamsByYearAndDiv(year, div) {
   const object = await utils.getObject({
-    Bucket: process.env.TEAMS_BUCKET_NAME,
+    Bucket: process.env.PREDICT_BUCKET_NAME,
     Key: `${year}/divs/${div}`
   });
 
