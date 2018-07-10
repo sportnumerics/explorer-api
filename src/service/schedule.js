@@ -30,7 +30,7 @@ async function getSchedulesByYearAndTeamIdsLocal(year, teamIds) {
     try {
       const schedule = await fs.readFile(fileName);
       return JSON.parse(schedule);
-    } catch {
+    } catch (e) {
       return null;
     }
   }));
