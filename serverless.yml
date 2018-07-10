@@ -12,14 +12,6 @@ provider:
     Action:
       - "s3:GetObject"
     Resource: "${self:custom.predictBucketArn}/*"
-  - Effect: "Allow"
-    Action:
-      - "dynamodb:Query"
-      - "dynamodb:BatchGetItem"
-    Resource:
-      - ${self:custom.teamsTableArn}
-      - ${self:custom.teamsTableIndexesArn}
-      - ${self:custom.divsTableArn}
   environment:
     NODE_ENV: ${opt:stage}
     PREDICT_BUCKET_NAME: ${self:custom.predictBucketName}
