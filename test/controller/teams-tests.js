@@ -14,18 +14,19 @@ describe('teams controller', () => {
 
     teamsMock = sinon.mock(teamsService);
 
-    teamsMock.expects('getTeamsByYearAndDiv')
+    teamsMock
+      .expects('getTeamsByYearAndDiv')
       .withArgs(year, div)
       .returns(Promise.resolve(fixtures.divJson));
 
-    return controller({ year, div })
-      .then((result) => {
-        expect(result).to.deep.equal(fixtures.expectedTeamsControllerResult)
-        teamsMock.verify();
-      })
+    return controller({ year, div }).then(result => {
+      require('fs').writeFileSync('teams.json', JSON.stringify(result));
+      expect(result).to.deep.equal(fixtures.expectedTeamsControllerResult);
+      teamsMock.verify();
+    });
   });
 
   afterEach(() => {
     teamsMock.restore();
-  })
+  });
 });

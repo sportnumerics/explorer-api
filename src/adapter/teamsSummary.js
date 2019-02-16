@@ -6,17 +6,24 @@ let moment = require('moment');
 let _ = require('lodash');
 
 function teamsSummary(divRes) {
-  const teams = _.map(divRes.teams, ({ id, name, ratings }) => (
-    { id, name, ratings: ratingsSummary(ratings) }
-  ));
-  const lastModified = utils.ratingsTimestamp(getFirstTeamRatings(divRes.teams));
+  const teams = _.map(divRes.teams, ({ id, name, ratings, record }) => ({
+    id,
+    name,
+    ratings: ratingsSummary(ratings),
+    record
+  }));
+  const lastModified = utils.ratingsTimestamp(
+    getFirstTeamRatings(divRes.teams)
+  );
   let body = { teams };
   let headers = utils.headers({ lastModified });
   return { body, headers };
 }
 
 function getFirstTeamRatings(teams) {
-  const firstTeam = _(teams).filter('ratings').head();
+  const firstTeam = _(teams)
+    .filter('ratings')
+    .head();
   if (firstTeam) {
     return firstTeam.ratings;
   } else {
