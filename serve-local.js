@@ -17,9 +17,10 @@ if (config.mocks) {
       res.header('Content-Type', 'application/json');
       res.header('Access-Control-Allow-Origin', '*');
       const m = require(config.mocks[mockPath]);
-      const data = typeof m === 'function' ?
-        m({ lastModified: new Date(), expires: new Date() }) :
-        m;
+      const data =
+        typeof m === 'function'
+          ? m({ lastModified: new Date(), expires: new Date() })
+          : m;
       res.set(data.headers);
       res.send(JSON.stringify(data.body));
     });
@@ -49,13 +50,13 @@ function addHandlersForServerlessConfig(fileName, app) {
           let method = http.method;
           if (method == 'get') {
             console.log(`Adding handler for route ${path}`);
-            app.get(path, handler)
+            app.get(path, handler);
           } else {
             console.log(`WARNING: Unsupported method ${method}`);
           }
         });
     });
-  }
+}
 
 function getHandler(string) {
   let parts = string.split('.');
@@ -69,7 +70,7 @@ function getHandler(string) {
 
 function expressifyPath(path) {
   // cheap cheat for now
-  return '/' + path.replace(/\{/g, ':').replace(/\}/g,'');
+  return '/' + path.replace(/\{/g, ':').replace(/\}/g, '');
 }
 
 function expressifyHandler(handler) {
@@ -83,7 +84,7 @@ function expressifyHandler(handler) {
 function createEventFromRequest(req) {
   return {
     pathParameters: req.params
-  }
+  };
 }
 
 function expressifyResponse(res) {
@@ -91,12 +92,12 @@ function expressifyResponse(res) {
     res.status(response.statusCode);
     res.set(response.headers);
     res.header('Content-Type', 'application/json');
-    res.send(new Buffer(response.body));
+    res.send(Buffer.from(response.body));
   };
 }
 
 function httpFunction(f) {
-  return _.some(f.events, httpEvent)
+  return _.some(f.events, httpEvent);
 }
 
 function httpEvent(e) {
@@ -105,4 +106,4 @@ function httpEvent(e) {
 
 app.listen(port);
 
-console.log(`Listening on ${port}`)
+console.log(`Listening on ${port}`);
