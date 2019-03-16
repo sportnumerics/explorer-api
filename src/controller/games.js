@@ -4,6 +4,7 @@ global.Promise = require('bluebird');
 const _ = require('lodash');
 const utils = require('../adapter/utils');
 const gamesService = require('../service/games');
+const predictGames = require('../adapter/predictGames');
 
 module.exports = async function gamesController(params) {
   const year = params.year;
@@ -24,7 +25,7 @@ module.exports = async function gamesController(params) {
     );
   }
 
-  const games = await gamesService.getGames(year, div, date);
+  const games = predictGames(await gamesService.getGames(year, div, date));
 
   const lastModified = utils.ratingsTimestamp(getFirstRatings(games));
 
