@@ -43,6 +43,13 @@ functions:
         path: years/{year}/teams/{id}
         method: get
         cors: true
+  gamesIndex:
+    handler: handlers.games
+    events:
+    - http:
+        path: years/{year}/divs/{div}/games
+        method: get
+        cors: true
   games:
     handler: handlers.games
     events:

@@ -19,20 +19,28 @@ module.exports = async function gamesController(params) {
     throw new InvalidRequestError('You must specify a division');
   }
 
-  if (!date) {
-    throw new InvalidRequestError(
-      'You must specify a date (YYYY-MM-DD format)'
-    );
+  if (date) {
+    return await getGames(year, div, date);
+  } else {
+    return await getIndex(year, div);
   }
+};
 
+async function getIndex(year, div) {
+  const games = await gamesService.getGames(year, div, 'index');
+
+  return { body: { games } };
+}
+
+async function getGames(year, div, date) {
   const games = predictGames(await gamesService.getGames(year, div, date));
 
   const lastModified = utils.ratingsTimestamp(getFirstRatings(games));
 
-  let body = { games };
-  let headers = utils.headers({ lastModified });
+  const body = { games };
+  const headers = utils.headers({ lastModified });
   return { body, headers };
-};
+}
 
 function getFirstRatings(games) {
   const firstTeam = _(games)
