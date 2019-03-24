@@ -9,7 +9,7 @@ let recordSummary = require('./recordSummary');
 function teamSummary({ teamRes, opponentsRes }) {
   let teamObj = teamRes[0];
   let games = teamObj.schedule;
-  let teamInfo = _.pick(teamObj, ['id', 'name', 'year', 'div']);
+  let teamInfo = _.pick(teamObj, ['id', 'name', 'year', 'div', 'rank']);
   let ratings = teamObj.ratings;
   let teamRatings = { ratings: ratingsSummary(ratings) };
   let teamRecord = { record: recordSummary(games) };
@@ -21,6 +21,7 @@ function teamSummary({ teamRes, opponentsRes }) {
     }
     const opponentRatings = opponent.ratings;
     return Object.assign({}, game, {
+      opponent: _.pick(opponent, ['name', 'id', 'div', 'rank']),
       predictions: predictGame(ratings, opponentRatings)
     });
   });
@@ -28,7 +29,7 @@ function teamSummary({ teamRes, opponentsRes }) {
 
   let lastModified = utils.ratingsTimestamp(ratings);
   let headers = utils.headers({ lastModified });
-  return { body, headers }
+  return { body, headers };
 }
 
 module.exports = teamSummary;

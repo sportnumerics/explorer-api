@@ -20,7 +20,6 @@ describe('teams controller', () => {
       .returns(Promise.resolve(fixtures.divJson));
 
     return controller({ year, div }).then(result => {
-      require('fs').writeFileSync('teams.json', JSON.stringify(result));
       expect(result).to.deep.equal(fixtures.expectedTeamsControllerResult);
       teamsMock.verify();
     });
