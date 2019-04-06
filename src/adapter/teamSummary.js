@@ -22,7 +22,7 @@ function teamSummary({ teamRes, opponentsRes }) {
     const opponentRatings = opponent.ratings;
     return Object.assign({}, game, {
       opponent: _.pick(opponent, ['name', 'id', 'div', 'rank']),
-      predictions: predictGame(ratings, opponentRatings)
+      predictions: predictGame(ratings, opponentRatings, game.location)
     });
   });
   let body = Object.assign({}, team, { schedule });
