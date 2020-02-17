@@ -14,3 +14,5 @@ else
 fi
 
 node_modules/.bin/serverless deploy --stage=$STAGE --verbose
+
+# TODO - add cache invalidation here.
