@@ -6,13 +6,18 @@ let moment = require('moment');
 let _ = require('lodash');
 
 function teamsSummary(divRes) {
-  const teams = _.map(divRes.teams, ({ id, name, ratings, record, rank }) => ({
-    id,
-    name,
-    ratings: ratingsSummary(ratings),
-    record,
-    rank
-  }));
+  const teams = _.map(divRes.teams, ({ id, name, ratings, record, rank }) => {
+    const team = {
+      id,
+      name,
+      ratings: ratingsSummary(ratings),
+      record
+    };
+    if (rank) {
+      team.rank = rank;
+    }
+    return team;
+  });
   const lastModified = utils.ratingsTimestamp(
     getFirstTeamRatings(divRes.teams)
   );
