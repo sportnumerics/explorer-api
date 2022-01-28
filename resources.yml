@@ -2,13 +2,13 @@ Mappings:
   StageMapping:
     dev:
       domain: explorer-api.dev.sportnumerics.com
-      certificate: arn:aws:acm:us-east-1:265978616089:certificate/8a8d8c31-20b3-49c4-8b58-13b259064cc6
+      certificate: arn:aws:acm:us-east-1:265978616089:certificate/02636181-f1d6-4cf9-8fe6-c99976b2b78a
     prodgreen:
       domain: explorer-api-green.sportnumerics.com
-      certificate: arn:aws:acm:us-east-1:265978616089:certificate/7140c26c-5b35-4f21-b16d-695bf5a659e6
+      certificate: arn:aws:acm:us-east-1:265978616089:certificate/02636181-f1d6-4cf9-8fe6-c99976b2b78a
     prodblue:
       domain: explorer-api-blue.sportnumerics.com
-      certificate: arn:aws:acm:us-east-1:265978616089:certificate/7140c26c-5b35-4f21-b16d-695bf5a659e6
+      certificate: arn:aws:acm:us-east-1:265978616089:certificate/02636181-f1d6-4cf9-8fe6-c99976b2b78a
 Resources:
   CloudfrontDistribution:
     Type: AWS::CloudFront::Distribution
@@ -16,9 +16,9 @@ Resources:
       DistributionConfig:
         Aliases:
           - Fn::FindInMap:
-            - StageMapping
-            - ${opt:stage}
-            - domain
+              - StageMapping
+              - ${opt:stage}
+              - domain
         DefaultCacheBehavior:
           ForwardedValues:
             QueryString: false
@@ -31,17 +31,17 @@ Resources:
           MaxTTL: 86400
         Enabled: true
         Origins:
-        - DomainName:
-            Fn::Join:
-              - ""
-              - - Ref: ApiGatewayRestApi
-                - ".execute-api."
-                - Ref: AWS::Region
-                - ".amazonaws.com"
-          OriginPath: "/${opt:stage}"
-          Id: DefaultOrigin
-          CustomOriginConfig:
-            OriginProtocolPolicy: https-only
+          - DomainName:
+              Fn::Join:
+                - ''
+                - - Ref: ApiGatewayRestApi
+                  - '.execute-api.'
+                  - Ref: AWS::Region
+                  - '.amazonaws.com'
+            OriginPath: '/${opt:stage}'
+            Id: DefaultOrigin
+            CustomOriginConfig:
+              OriginProtocolPolicy: https-only
         PriceClass: PriceClass_All
         ViewerCertificate:
           AcmCertificateArn:
